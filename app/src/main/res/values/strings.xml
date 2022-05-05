@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">CalculatorForAll</string>
+    <string name="percentage">Проценти</string>
+    <string name="average">Середнє</string>
+    <string name="proportions">Пропорції</string>
+    <string name="random">Генератор випадкових чисел</string>
+    <string name="roman">Переклад в Римські числа</string>
+    <string name="numberSystems">Переклад між системами числення</string>
+    <string name="date">Різниця дати(Вік)</string>
+    <string name="BMI">ІМТ</string>
+    <string name="fuel">Об\'єм палива</string>
+    <string name="dataStorage">Конвертація збереження даних</string>
+    <string name="dataRate">Конвертація швидкості передачі даних</string>
+    <string name="square">Площа</string>
+    <string name="value">Об\'єм</string>
+    <string name="trigonometry">Тригонометрія</string>
+    <string name="ValueConversion">Конфертація велечин</string>
+    <string name="angel">Конвертація градусних мір</string>
+    <string name="power">Потужність</string>
+    <string name="temperature">Температура</string>
+    <string name="acceleration">Прискорення</string>
+    <string name="speed">Швидкість</string>
+    <string name="pressure">Конфертація тиску</string>
+    <string name="weight">Конвертація ваги</string>
+    <string name="currency">Конвертор валют</string>
+    <string name="tip">Чаєві</string>
+    <string name="credit">Кредит</string>
+    <string name="deposit">Депозит</string>
+    <string name="tax">Податки</string>
+    <string name="off">Вимкнення</string>
+    <string name="linear_function">Лінійне рівняння</string>
+    <string name="quadratic_equation">Квадратне рівняння</string>
+    <string name="konv">Конвертувати</string>
+    <string name="calc">Розрахувати</string>
+    <string name="label"></string>
+    <string-array name="acceleration">
+        <item>m/s^2</item>
+        <item>ft/s^2</item>
+        <item>g</item>
+        <item>Gal</item>
+    </string-array>
+    <string-array name="numberSystems">
+        <item>binary</item>
+        <item>decimal</item>
+        <item>octal</item>
+        <item>hexadecimal</item>
+    </string-array>
+    <string-array name="fuel">
+        <item>l/100km</item>
+        <item>mpg</item>
+        <item>l/m</item>
+        <item>mpl</item>
+    </string-array>
+    <string-array name="dataStorage">
+        <item>Mb</item>
+        <item>Gb</item>
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="dataRate">
+        <item>Mb/s</item>
+        <item>Gb/s</item>
+        <item>MB/s</item>
+        <item>GB/s</item>
+        <item>KB/s</item>
+        <item>Kb/s</item>
+        <item>Tb/s</item>
+        <item>TB/s</item>
+    </string-array>
+    <string-array name="square">
+        <item>m^2</item>
+        <item>km^2</item>
+        <item>ft^2</item>
+        <item>yd^</item>
+        <item>cm^2</item>
+        <item>ar</item>
+        <item>ha</item>
+    </string-array>
+    <string-array name="value">
+        <item>m^3</item>
+        <item>l</item>
+        <item>mm^3</item>
+        <item>ml</item>
+        <item>cm^3</item>
+    </string-array>
+    <string-array name="angel">
+        <item>radian</item>
+        <item>degree</item>
+        <item>minute</item>
+        <item>second</item>
+    </string-array>
+    <string-array name="temperature">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvins</item>
+    </string-array>
+    <string-array name="speed">
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>ft/s</item>
+    </string-array>
+    <string-array name="pressure">
+        <item>atm</item>
+        <item>bar</item>
+        <item>N/m^2</item>
+        <item>psi</item>
+    </string-array>
+    <string-array name="weight">
+        <item>g</item>
+        <item>kg</item>
+        <item>t</item>
+        <item>ng</item>
+        <item>f</item>
+    </string-array>
+    <string-array name="distance">
+        <item>mm</item>
+        <item>sm</item>
+        <item>dm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>in</item>
+        <item>ft</item>
+        <item>mi</item>
+    </string-array>
+</resources>
