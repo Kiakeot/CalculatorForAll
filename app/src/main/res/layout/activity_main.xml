@@ -146,11 +146,12 @@
         app:layout_constraintVertical_bias="0.306" />
 
     <Button
+        style="@style/buttonStyle"
+        android:background="@drawable/button_style"
         android:id="@+id/search"
         android:layout_width="249dp"
         android:layout_height="52dp"
         android:text="Пошук"
-        android:background="@drawable/button_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.901"

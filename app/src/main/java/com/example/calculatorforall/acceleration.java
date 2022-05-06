@@ -2,7 +2,6 @@ package com.example.calculatorforall;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,7 +18,6 @@ public class acceleration extends AppCompatActivity {
     private String finishSystem;
     private int startSystemPos;
     private int finishSystemPos;
-    public String strStartNumber;
     public double result;
     private TextView textFinish;
     private int startNumber;
@@ -35,15 +33,6 @@ public class acceleration extends AppCompatActivity {
         Button konvert = findViewById(R.id.konvert);
         textFinish = findViewById(R.id.text_finish);
 
-        edit_text_start.setOnKeyListener((v, keyCode, event) -> {
-                    if (event.getAction() == KeyEvent.ACTION_DOWN &&
-                            (keyCode == KeyEvent.KEYCODE_ENTER)) {
-                        strStartNumber = edit_text_start.getText().toString();
-                        return true;
-                    }
-                    return false;
-                }
-        );
 
 
         Spinner spinner_start = findViewById(R.id.acceleration_spinner_start);
@@ -54,34 +43,15 @@ public class acceleration extends AppCompatActivity {
         spinner_start.getSelectedItemId();
 
 
-//        spinner_start.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-//                startSystemPos = i;
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {
-//            }
-//        });
 
         Spinner spinner_finish = findViewById(R.id.acceleration_spinner_finish);
         ArrayAdapter adapter_finish = ArrayAdapter.createFromResource(this,
                 R.array.acceleration, android.R.layout.simple_spinner_item);
         adapter_finish.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_finish.setAdapter(adapter_finish);
-//
-//        spinner_finish.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-//                finishSystemPos = i;
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> adapterView) {
-//
-//            }
-//        });
+
+
+
         konvert.setOnClickListener(view -> {
             finishSystemPos = spinner_finish.getSelectedItemPosition();
             startSystemPos = spinner_start.getSelectedItemPosition();
@@ -211,61 +181,6 @@ public class acceleration extends AppCompatActivity {
                 }
                 break;
         }
-
-//        if (!startSystem.equals("m/s^2") && !finishSystem.equals("m/s^2")) {
-//            result = startNumber;
-//        }
-//        if (!startSystem.equals("m/s^2") && !finishSystem.equals("ft/s^2")) {
-//            result = 3.28083 * startNumber;
-//        }
-//        if (!startSystem.equals("m/s^2") && !finishSystem.equals("g")) {
-//            result = 0.10193 * startNumber;
-//        }
-//        if (!startSystem.equals("m/s^2") && !finishSystem.equals("Gal")) {
-//            result = 100 * startNumber;
-//        }
-//
-//
-//        if (!startSystem.equals("ft/s^2") && !finishSystem.equals("m/s^2")) {
-//            result = 0.3048 * startNumber;
-//        }
-//        if (!startSystem.equals("ft/s^2") && !finishSystem.equals("ft/s^2")) {
-//            result = startNumber;
-//        }
-//        if (!startSystem.equals("ft/s^2") && !finishSystem.equals("g")) {
-//            result = 0.03107 * startNumber;
-//        }
-//        if (!startSystem.equals("ft/s^2") && !finishSystem.equals("Gal")) {
-//            result = 30.48 * startNumber;
-//        }
-//
-//
-//        if (!startSystem.equals("g") && !finishSystem.equals("m/s^2")) {
-//            result = 9.81 * startNumber;
-//        }
-//        if (!startSystem.equals("g") && !finishSystem.equals("ft/s^2")) {
-//            result = 32.18503 * startNumber;
-//        }
-//        if (!startSystem.equals("g") && !finishSystem.equals("g")) {
-//            result = startNumber;
-//        }
-//        if (!startSystem.equals("g") && !finishSystem.equals("Gal")) {
-//            result = 981 * startNumber;
-//        }
-//
-//
-//        if (!startSystem.equals("Gal") && !finishSystem.equals("m/s^2")) {
-//            result = 0.01 * startNumber;
-//        }
-//        if (!startSystem.equals("Gal") && !finishSystem.equals("ft/s^2")) {
-//            result = 0.03280 * startNumber;
-//        }
-//        if (!startSystem.equals("Gal") && !finishSystem.equals("g")) {
-//            result = 0.00101 * startNumber;
-//        }
-//        if (!startSystem.equals("Gal") && !finishSystem.equals("Gal")) {
-//            result = startNumber;
-//        }
     }
 
 }

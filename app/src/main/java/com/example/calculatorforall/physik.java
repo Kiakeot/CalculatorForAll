@@ -28,7 +28,7 @@ public class physik extends AppCompatActivity implements OnClickInterface {
         arrayList.add(new ItemListModel(getString(R.string.angel),getResources().getDrawable(R.drawable.algebra_icon)));
         arrayList.add(new ItemListModel(getString(R.string.power),getResources().getDrawable(R.drawable.algebra_icon)));
         arrayList.add(new ItemListModel(getString(R.string.temperature),getResources().getDrawable(R.drawable.physik_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.acceleration),getResources().getDrawable(R.drawable.algebra_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.acceleration),getResources().getDrawable(R.drawable.acceleration_icon)));
         arrayList.add(new ItemListModel(getString(R.string.speed),getResources().getDrawable(R.drawable.algebra_icon)));
         arrayList.add(new ItemListModel(getString(R.string.pressure),getResources().getDrawable(R.drawable.algebra_icon)));
         arrayList.add(new ItemListModel(getString(R.string.weight),getResources().getDrawable(R.drawable.algebra_icon)));

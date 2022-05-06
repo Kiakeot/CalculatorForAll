@@ -32,11 +32,13 @@
     <string name="quadratic_equation">Квадратне рівняння</string>
     <string name="konv">Конвертувати</string>
     <string name="calc">Розрахувати</string>
-    <string name="label"></string>
+    <string name="firstNumber">Перше значення</string>
+    <string name="secondNumber">Друге значення</string>
+    <string name="finishValue">Остаточне значення</string>
     <string-array name="acceleration">
         <item>m/s^2</item>
         <item>ft/s^2</item>
-        <item>g</item>
+        <item>g(gravity)</item>
         <item>Gal</item>
     </string-array>
     <string-array name="numberSystems">
@@ -110,7 +112,6 @@
         <item>g</item>
         <item>kg</item>
         <item>t</item>
-        <item>ng</item>
         <item>f</item>
     </string-array>
     <string-array name="distance">
@@ -122,5 +123,11 @@
         <item>in</item>
         <item>ft</item>
         <item>mi</item>
+    </string-array>
+    <string-array name="average">
+        <item>Arithmetic</item>
+        <item>Geometric</item>
+        <item>Square</item>
+        <item>Harmonious</item>
     </string-array>
 </resources>
