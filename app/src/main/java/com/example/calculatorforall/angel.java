@@ -9,6 +9,6 @@ public class angel extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ohm);
+        setContentView(R.layout.activity_angel);
     }
 }
