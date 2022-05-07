@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -29,10 +30,10 @@ public class average extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_average);
-        editFirstNumber = findViewById(R.id.edit_first_number);
-        editSecondNumber = findViewById(R.id.edit_second_number);
-        Button switch_off = findViewById(R.id.switch_off);
-        Button calculate = findViewById(R.id.konvert);
+        editFirstNumber = findViewById(R.id.first_number);
+        editSecondNumber = findViewById(R.id.second_number);
+        ImageButton switch_off = findViewById(R.id.switch_off);
+        Button calculate = findViewById(R.id.calculate);
         textFinish = findViewById(R.id.text_finish);
 
 

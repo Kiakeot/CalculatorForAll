@@ -30,7 +30,7 @@ public class algebra extends AppCompatActivity implements OnClickInterface {
         arrayList.add(new ItemListModel(getString(R.string.proportions),getResources().getDrawable(R.drawable.proportion_icon)));
         arrayList.add(new ItemListModel(getString(R.string.linear_function),getResources().getDrawable(R.drawable.linear_function_icon)));
         arrayList.add(new ItemListModel(getString(R.string.quadratic_equation),getResources().getDrawable(R.drawable.quadratic_equation_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.roman),getResources().getDrawable(R.drawable.algebra_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.roman),getResources().getDrawable(R.drawable.roman_icon)));
         arrayList.add(new ItemListModel(getString(R.string.numberSystems),getResources().getDrawable(R.drawable.algebra_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);

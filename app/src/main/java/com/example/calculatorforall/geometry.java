@@ -25,9 +25,9 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
         Button buoff = (Button) findViewById(R.id.buoff);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
-        arrayList.add(new ItemListModel(getString(R.string.square),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.value),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.trigonometry),getResources().getDrawable(R.drawable.physik_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.square),getResources().getDrawable(R.drawable.square_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.value),getResources().getDrawable(R.drawable.value_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.trigonometry),getResources().getDrawable(R.drawable.trigonometry_icon)));
         arrayList.add(new ItemListModel(getString(R.string.ValueConversion),getResources().getDrawable(R.drawable.physik_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);

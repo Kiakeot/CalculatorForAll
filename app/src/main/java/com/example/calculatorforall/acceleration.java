@@ -1,10 +1,12 @@
 package com.example.calculatorforall;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -29,14 +31,14 @@ public class acceleration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceleration);
         edit_text_start = findViewById(R.id.edit_text_start);
-        Button switch_off = findViewById(R.id.switch_off);
+        ImageButton switch_off = findViewById(R.id.switch_off);
         Button konvert = findViewById(R.id.konvert);
         textFinish = findViewById(R.id.text_finish);
 
 
 
         Spinner spinner_start = findViewById(R.id.acceleration_spinner_start);
-        ArrayList<String> list = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.acceleration)));
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.angel)));
         ArrayAdapter<String> adapter_start = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
         adapter_start.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_start.setAdapter(adapter_start);

@@ -25,13 +25,13 @@ public class physik extends AppCompatActivity implements OnClickInterface {
         Button buoff = (Button) findViewById(R.id.buoff);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
-        arrayList.add(new ItemListModel(getString(R.string.angel),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.power),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.temperature),getResources().getDrawable(R.drawable.physik_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.angel),getResources().getDrawable(R.drawable.angel_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.power),getResources().getDrawable(R.drawable.power_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.temperature),getResources().getDrawable(R.drawable.temperature_icon)));
         arrayList.add(new ItemListModel(getString(R.string.acceleration),getResources().getDrawable(R.drawable.acceleration_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.speed),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.pressure),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.weight),getResources().getDrawable(R.drawable.algebra_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.speed),getResources().getDrawable(R.drawable.speed_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.pressure),getResources().getDrawable(R.drawable.pressure_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.weight),getResources().getDrawable(R.drawable.weight_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
         buoff.setOnClickListener(new View.OnClickListener(){
