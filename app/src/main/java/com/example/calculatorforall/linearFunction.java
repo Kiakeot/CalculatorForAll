@@ -9,6 +9,6 @@ public class linearFunction extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_proportions);
+        setContentView(R.layout.activity_linear);
     }
 }

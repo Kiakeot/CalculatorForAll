@@ -38,7 +38,7 @@ public class acceleration extends AppCompatActivity {
 
 
         Spinner spinner_start = findViewById(R.id.acceleration_spinner_start);
-        ArrayList<String> list = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.angel)));
+        ArrayList<String> list = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.acceleration)));
         ArrayAdapter<String> adapter_start = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
         adapter_start.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_start.setAdapter(adapter_start);

@@ -34,7 +34,22 @@
     <string name="calc">Розрахувати</string>
     <string name="firstNumber">Перше значення</string>
     <string name="secondNumber">Друге значення</string>
+    <string name="third">Третє значення</string>
+    <string name="fourth">Четверте значення</string>
+    <string name="vaga">Ваша вага(кг)</string>
+    <string name="visota">Ваш зріст(см)</string>
     <string name="finishValue">Остаточне значення</string>
+    <string name="age">Ваш вік</string>
+    <string name="geometry">Геометрія</string>
+    <string name="algebra">Алгебра</string>
+    <string name="finance">Фінанси</string>
+    <string name="physik">Фізика</string>
+    <string name="life">Побутове</string>
+    <string name="of">Вимк.</string>
+    <string name="allSum">Введіть всю суму</string>
+    <string name="percentPerMonth">Введіть процент(за міс.)</string>
+    <string name="fullData">Введіть дату(в міс.)</string>
+    <string name="startCurrency">Початкова валюта</string>
     <string-array name="acceleration">
         <item>m/s^2</item>
         <item>ft/s^2</item>
@@ -130,4 +145,5 @@
         <item>Square</item>
         <item>Harmonious</item>
     </string-array>
+
 </resources>
