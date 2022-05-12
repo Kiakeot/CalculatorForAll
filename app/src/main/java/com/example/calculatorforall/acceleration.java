@@ -17,13 +17,13 @@ import java.util.Arrays;
 
 public class acceleration extends AppCompatActivity {
     private String startSystem;
+    private String strResult;
     private String finishSystem;
     private int startSystemPos;
     private int finishSystemPos;
+    private int startNumber;
     public double result;
     private TextView textFinish;
-    private int startNumber;
-    private String strResult;
     private EditText edit_text_start;
 
     @Override

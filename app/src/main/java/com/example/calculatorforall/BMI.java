@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 public class BMI extends AppCompatActivity {
     private EditText editVaga;
     private EditText editSrist;
@@ -37,7 +39,7 @@ public class BMI extends AppCompatActivity {
             Vaga = Integer.parseInt(editVaga.getText().toString().trim());
             SmSrist = Integer.parseInt(editSrist.getText().toString().trim());
             getAnswer();
-            strResult = String.valueOf(result);
+            strResult = String.format(Locale.UK, "%.2f ", result);
             textFinish.setText(strResult);
             getVisnovok();
             visnovok.setText(strVisnovok);

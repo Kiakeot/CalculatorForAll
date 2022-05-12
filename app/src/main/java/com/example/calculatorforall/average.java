@@ -22,7 +22,7 @@ public class average extends AppCompatActivity {
     private int spinner_pos;
     private String finishSystem;
     public double result;
-    public String strResult;
+    private String strResult;
     public int firstNumber;
     public int secondNumber;
 

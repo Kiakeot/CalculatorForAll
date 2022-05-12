@@ -6,7 +6,7 @@
     <string name="random">Генератор випадкових чисел</string>
     <string name="roman">Переклад в Римські числа</string>
     <string name="numberSystems">Переклад між системами числення</string>
-    <string name="date">Різниця дати(Вік)</string>
+    <string name="date">Різниця між датами</string>
     <string name="BMI">ІМТ</string>
     <string name="fuel">Об\'єм палива</string>
     <string name="dataStorage">Конвертація збереження даних</string>
@@ -50,6 +50,14 @@
     <string name="percentPerMonth">Введіть процент(за міс.)</string>
     <string name="fullData">Введіть дату(в міс.)</string>
     <string name="startCurrency">Початкова валюта</string>
+    <string name="YourUp">Ваш заробіток</string>
+    <string name="firstSystem">Перша система числення</string>
+    <string name="valueWithX">Значення біля X(A)</string>
+    <string name="valueWithOutX">Значення без Х(B)</string>
+    <string-array name="znak">
+        <item>+(Плюс)</item>
+        <item>-(Мінус)</item>
+    </string-array>
     <string-array name="acceleration">
         <item>m/s^2</item>
         <item>ft/s^2</item>
@@ -75,14 +83,10 @@
         <item>GB</item>
     </string-array>
     <string-array name="dataRate">
+        <item>Kb/s</item>
         <item>Mb/s</item>
         <item>Gb/s</item>
-        <item>MB/s</item>
-        <item>GB/s</item>
-        <item>KB/s</item>
-        <item>Kb/s</item>
         <item>Tb/s</item>
-        <item>TB/s</item>
     </string-array>
     <string-array name="square">
         <item>m^2</item>
@@ -145,5 +149,17 @@
         <item>Square</item>
         <item>Harmonious</item>
     </string-array>
-
+    <string-array name="currency">
+        <item>UHR</item>
+        <item>CZK</item>
+        <item>INR</item>
+        <item>SEK</item>
+        <item>USD</item>
+        <item>BYN</item>
+        <item>EUR</item>
+        <item>XAU</item>
+        <item>XAG</item>
+        <item>XPT</item>
+        <item>XPD</item>
+    </string-array>
 </resources>
