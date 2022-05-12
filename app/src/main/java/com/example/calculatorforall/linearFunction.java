@@ -74,10 +74,10 @@ public class linearFunction extends AppCompatActivity {
         getFirstSpinnerPosition();
         getSecondSpinnerPosition();
         if(firstSpinnerValue.contains("+") && secondSpinnerValue.contains("+") || firstSpinnerValue.contains("-") && secondSpinnerValue.contains("-")){
-            result = firstValue/secondValue;
+            result = secondValue/firstValue;
         }
         if(firstSpinnerValue.contains("+") && secondSpinnerValue.contains("-") || firstSpinnerValue.contains("-") && secondSpinnerValue.contains("+")){
-            result = (-1) * (firstValue/secondValue);
+            result = (-1) * (secondValue/firstValue);
         }
     }
 
