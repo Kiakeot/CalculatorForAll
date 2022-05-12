@@ -9,6 +9,6 @@ public class value extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_capacity);
+        setContentView(R.layout.activity_value);
     }
 }

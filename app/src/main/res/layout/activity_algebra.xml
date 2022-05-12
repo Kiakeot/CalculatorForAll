@@ -9,10 +9,17 @@
 
     <Button
         android:id="@+id/buoff"
+        style="@style/buttonStyle"
+        android:background="@drawable/button_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_style"
-        android:text="@string/off" />
+        android:text="@string/off"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_algebra"

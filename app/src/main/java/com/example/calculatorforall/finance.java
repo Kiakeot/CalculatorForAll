@@ -26,10 +26,10 @@ public class finance extends AppCompatActivity implements OnClickInterface {
         RecyclerView recyclerView = findViewById(R.id.recycler_algebra);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
-        arrayList.add(new ItemListModel(getString(R.string.currency), getResources().getDrawable(R.drawable.algebra_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.currency), getResources().getDrawable(R.drawable.currency_icon)));
         arrayList.add(new ItemListModel(getString(R.string.tip), getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.credit), getResources().getDrawable(R.drawable.physik_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.deposit), getResources().getDrawable(R.drawable.algebra_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.credit), getResources().getDrawable(R.drawable.credit_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.deposit), getResources().getDrawable(R.drawable.deposit_icon)));
         arrayList.add(new ItemListModel(getString(R.string.tax), getResources().getDrawable(R.drawable.algebra_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);

@@ -7,4 +7,113 @@
     android:background="@color/background"
     tools:context=".BMI">
 
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/bmi_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/switch_off"
+        android:src="@drawable/off_icon"
+        style="@style/buttonStyle"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/button_style"
+        android:text="@string/off"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BMI"
+        android:textSize="17sp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+    <EditText
+        android:id="@+id/edit_vaga"
+        android:layout_width="200dp"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/vaga"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_srist"
+        app:layout_constraintEnd_toStartOf="@+id/edit_srist"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edit_srist"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edit_srist"
+        android:layout_width="200dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/edit_text_style"
+        android:gravity="center"
+        android:hint="@string/visota"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <Button
+        android:id="@+id/calculate"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:text="@string/calc"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        app:layout_constraintBottom_toTopOf="@+id/text_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_vaga" />
+
+    <TextView
+        android:text="Висновок"
+        android:layout_width="198dp"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:id="@+id/visnovok"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:background="@drawable/edit_text_style"
+        app:layout_constraintBottom_toBottomOf="@+id/text_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_finish"
+        app:layout_constraintTop_toTopOf="@+id/text_finish" />
+
+    <TextView
+        android:text="@string/finishValue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:background="@drawable/edit_text_style"
+        android:id="@+id/text_finish"
+        android:layout_width="198dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_vaga" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

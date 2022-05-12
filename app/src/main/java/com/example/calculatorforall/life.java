@@ -25,11 +25,11 @@ public class life extends AppCompatActivity implements OnClickInterface {
         Button buoff = (Button) findViewById(R.id.buoff);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
-        arrayList.add(new ItemListModel(getString(R.string.date),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.BMI),getResources().getDrawable(R.drawable.physik_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.fuel),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.dataStorage),getResources().getDrawable(R.drawable.algebra_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.dataRate),getResources().getDrawable(R.drawable.algebra_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.date),getResources().getDrawable(R.drawable.data_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.BMI),getResources().getDrawable(R.drawable.bmi_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.fuel),getResources().getDrawable(R.drawable.fuel_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.dataStorage),getResources().getDrawable(R.drawable.data_storage_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.dataRate),getResources().getDrawable(R.drawable.data_rate_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 
