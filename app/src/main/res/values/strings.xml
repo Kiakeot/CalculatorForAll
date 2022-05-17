@@ -150,10 +150,8 @@
         <item>Harmonious</item>
     </string-array>
     <string-array name="currency">
-        <item>UHR</item>
+        <item>UAH</item>
         <item>CZK</item>
-        <item>INR</item>
-        <item>SEK</item>
         <item>USD</item>
         <item>BYN</item>
         <item>EUR</item>
