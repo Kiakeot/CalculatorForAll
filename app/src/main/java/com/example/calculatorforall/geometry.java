@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,8 @@ import com.example.calculatorforall.adapter.OnClickInterface;
 import java.util.ArrayList;
 
 public class geometry extends AppCompatActivity implements OnClickInterface {
-    private ArrayList<ItemListModel> arrayList = new ArrayList<>();
+    private final ArrayList<ItemListModel> arrayList = new ArrayList<>();
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,8 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
         arrayList.add(new ItemListModel(getString(R.string.square),getResources().getDrawable(R.drawable.square_icon)));
         arrayList.add(new ItemListModel(getString(R.string.value),getResources().getDrawable(R.drawable.value_icon)));
         arrayList.add(new ItemListModel(getString(R.string.trigonometry),getResources().getDrawable(R.drawable.trigonometry_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.ValueConversion),getResources().getDrawable(R.drawable.physik_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.squareConvertor),getResources().getDrawable(R.drawable.physik_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.physik_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 
@@ -57,7 +60,7 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
                 startActivity(intent);
                 break;
             case 3:
-                intent = new Intent(geometry.this, ValueConversion.class);
+                intent = new Intent(geometry.this, ValueConvertor.class);
                 startActivity(intent);
                 break;
         }

@@ -46,7 +46,7 @@
 
     <EditText
         android:id="@+id/first_number"
-        android:layout_width="200dp"
+        android:layout_width="185dp"
         android:layout_height="56dp"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
@@ -61,7 +61,7 @@
 
     <EditText
         android:id="@+id/second_number"
-        android:layout_width="200dp"
+        android:layout_width="185dp"
         android:layout_height="56dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/edit_text_style"

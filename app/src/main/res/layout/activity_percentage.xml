@@ -7,12 +7,112 @@
     android:background="@color/background"
     tools:context=".percentage">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/percent_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/switch_off"
+        style="@style/buttonStyle"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:background="@drawable/button_style"
+        android:src="@drawable/off_icon"
+        android:text="@string/off"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/percentage"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/edit_suma"
+        android:layout_width="207dp"
+        android:layout_height="57dp"
+        android:gravity="center"
+        android:background="@drawable/edit_text_style"
+        android:hint="@string/allSum"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <Spinner
+        android:id="@+id/percent_spinner_start"
+        android:layout_width="109dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_percent" />
+
+    <EditText
+        android:id="@+id/edit_percent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_marginStart="8dp"
+        android:hint="@string/percent"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_suma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_suma"
+        app:layout_constraintTop_toTopOf="@+id/edit_suma" />
+
+    <Button
+        android:id="@+id/calculate"
+        style="@style/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/calc"
+        app:layout_constraintBottom_toTopOf="@+id/text_finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_percent" />
+
+    <TextView
+        android:id="@+id/text_finish"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="percentage"
-        android:textColor="@color/black"
-        android:textSize="60dp"
-        />
+        android:layout_height="58dp"
+        android:hint="@string/YourUpOrDown"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_suma" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

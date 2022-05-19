@@ -23,8 +23,8 @@ public class average extends AppCompatActivity {
     private String finishSystem;
     public double result;
     private String strResult;
-    public int firstNumber;
-    public int secondNumber;
+    public double firstNumber;
+    public double secondNumber;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +97,7 @@ public class average extends AppCompatActivity {
                 break;
             }
             case "Harmonious":{
-                result = 2/(1/firstNumber +1/secondNumber);
+                result = 2/((1/firstNumber) + (1/secondNumber));
             }
         }
     }

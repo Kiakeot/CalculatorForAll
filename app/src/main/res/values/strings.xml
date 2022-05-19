@@ -12,15 +12,16 @@
     <string name="dataStorage">Конвертація збереження даних</string>
     <string name="dataRate">Конвертація швидкості передачі даних</string>
     <string name="square">Площа</string>
-    <string name="value">Об\'єм</string>
+    <string name="value">Обєм</string>
     <string name="trigonometry">Тригонометрія</string>
-    <string name="ValueConversion">Конфертація велечин</string>
+    <string name="squareConvertor">Конвертація площі</string>
+    <string name="valueConvertor">Конвертація обєму</string>
     <string name="angel">Конвертація градусних мір</string>
     <string name="power">Потужність</string>
     <string name="temperature">Температура</string>
     <string name="acceleration">Прискорення</string>
     <string name="speed">Швидкість</string>
-    <string name="pressure">Конфертація тиску</string>
+    <string name="pressure">Конвертація тиску</string>
     <string name="weight">Конвертація ваги</string>
     <string name="currency">Конвертор валют</string>
     <string name="tip">Чаєві</string>
@@ -54,6 +55,24 @@
     <string name="firstSystem">Перша система числення</string>
     <string name="valueWithX">Значення біля X(A)</string>
     <string name="valueWithOutX">Значення без Х(B)</string>
+    <string name="dataDif">Різниця між датами</string>
+    <string name="percent">Введіть процент</string>
+    <string name="YourUpOrDown">Ваш приріст/зменшення</string>
+    <string name="firstBarrier">Початкове значення</string>
+    <string name="secondBarrier">Останнє значення</string>
+    <string name="allWork">Уся робота</string>
+    <string name="allTimes">Весь час</string>
+    <string name="voltage">Напруга</string>
+    <string name="amperage">Сила струму</string>
+    <string name="resistance">Опір</string>
+    <string name="lessBarrier">Менше число</string>
+    <string name="LargestBarrier">Більше число</string>
+    <string name="SecondDate">Виберіть другу дату</string>
+    <string name="firstDate">Виберіть першу дату</string>
+    <string-array name="upOrDown">
+        <item>Збільшення</item>
+        <item>Зменшення</item>
+    </string-array>
     <string-array name="znak">
         <item>+(Плюс)</item>
         <item>-(Мінус)</item>
@@ -159,5 +178,11 @@
         <item>XAG</item>
         <item>XPT</item>
         <item>XPD</item>
+    </string-array>
+    <string-array name="power">
+        <item>A/t</item>
+        <item>U*I</item>
+        <item>I^2*R</item>
+        <item>U^2/R</item>
     </string-array>
 </resources>

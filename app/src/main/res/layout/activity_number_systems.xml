@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="221dp"
-        android:layout_height="46dp"
+        android:layout_width="327dp"
+        android:layout_height="52dp"
         android:gravity="center"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
@@ -94,9 +94,9 @@
         android:layout_height="68dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
+
         android:hint="@string/firstSystem"
         android:background="@drawable/edit_text_style"
-        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/system_spinner_start"
         app:layout_constraintEnd_toStartOf="@+id/system_spinner_start"
         app:layout_constraintStart_toStartOf="parent"
