@@ -90,23 +90,25 @@
         android:text="@string/calc"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427" />
+        app:layout_constraintTop_toBottomOf="@+id/firstDatePickerButton"
+        app:layout_constraintVertical_bias="0.426" />
 
     <TextView
         android:id="@+id/second_date"
         android:layout_width="match_parent"
         android:layout_height="37dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
         android:text="@string/SecondDate"
         android:textSize="17dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/calculate"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDatePickerButton" />
 
     <Button
         android:id="@+id/secondDatePickerButton"
@@ -116,25 +118,25 @@
         android:text="JAN 01 2022"
         android:textColor="@color/black"
         android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/calculate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/second_date"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintTop_toTopOf="@+id/second_date" />
 
     <TextView
         android:id="@+id/difference_between_dates_text"
         android:layout_width="match_parent"
         android:layout_height="65dp"
+        android:background="@drawable/edit_text_style"
+        android:gravity="center"
+        android:hint="@string/dataDif"
+        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calculate"
-        android:background="@drawable/edit_text_style"
-        android:hint="@string/dataDif"
-        android:gravity="center"
-        android:textSize="17dp"
-        />
+        app:layout_constraintVertical_bias="0.09" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

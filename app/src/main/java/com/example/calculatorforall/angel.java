@@ -13,12 +13,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
 
 public class angel extends AppCompatActivity {
     private String startSystem;
     private String finishSystem;
-    private int startSystemPos;
-    private int finishSystemPos;
     public double result;
     private TextView textFinish;
     private int startNumber;
@@ -36,7 +35,7 @@ public class angel extends AppCompatActivity {
 
 
 
-        Spinner spinner_start = findViewById(R.id.acceleration_spinner_start);
+        Spinner spinner_start = findViewById(R.id.spinner_start);
         ArrayList<String> list = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.angel)));
         ArrayAdapter<String> adapter_start = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
         adapter_start.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -45,7 +44,7 @@ public class angel extends AppCompatActivity {
 
 
 
-        Spinner spinner_finish = findViewById(R.id.acceleration_spinner_finish);
+        Spinner spinner_finish = findViewById(R.id.spinner_finish);
         ArrayAdapter adapter_finish = ArrayAdapter.createFromResource(this,
                 R.array.angel, android.R.layout.simple_spinner_item);
         adapter_finish.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -54,11 +53,11 @@ public class angel extends AppCompatActivity {
 
 
         konvert.setOnClickListener(view -> {
-            finishSystemPos = spinner_finish.getSelectedItemPosition();
-            startSystemPos = spinner_start.getSelectedItemPosition();
+            startSystem = spinner_start.getSelectedItem().toString();
+            finishSystem = spinner_finish.getSelectedItem().toString();
             startNumber = Integer.parseInt(edit_text_start.getText().toString().trim());
             convertData();
-            strResult = String.valueOf(result);
+            strResult = String.format(Locale.UK, "%.5f ", result);
             textFinish.setText(strResult);
         });
 
@@ -68,52 +67,8 @@ public class angel extends AppCompatActivity {
         });
     }
 
-    private void chooseFinishValue() {
-        switch (finishSystemPos) {
-            case 0: {
-                finishSystem = "radian";
-                break;
-            }
-            case 1: {
-                finishSystem = "degree";
-                break;
-            }
-            case 2: {
-                finishSystem = "minute";
-                break;
-            }
-            case 3: {
-                finishSystem = "second";
-                break;
-            }
-        }
-    }
-
-    private void chooseStartValue() {
-        switch (startSystemPos) {
-            case 0: {
-                startSystem = "radian";
-                break;
-            }
-            case 1: {
-                startSystem = "degree";
-                break;
-            }
-            case 2: {
-                startSystem = "minute";
-                break;
-            }
-            case 3: {
-                startSystem = "second";
-                break;
-            }
-        }
-    }
 
     private void convertData() {
-        chooseStartValue();
-        chooseFinishValue();
-
         switch (startSystem) {
             case "radian":
                 switch (finishSystem) {

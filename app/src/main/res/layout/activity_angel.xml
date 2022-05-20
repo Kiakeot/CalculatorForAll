@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
-        android:id="@+id/acceleration_spinner_start"
+        android:id="@+id/spinner_start"
         android:layout_width="127dp"
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,7 +66,7 @@
         app:layout_constraintVertical_bias="0.279" />
 
     <Spinner
-        android:id="@+id/acceleration_spinner_finish"
+        android:id="@+id/spinner_finish"
         android:layout_width="127dp"
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -98,10 +98,10 @@
         android:background="@drawable/edit_text_style"
         android:hint="@string/angel"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/acceleration_spinner_start"
-        app:layout_constraintEnd_toStartOf="@+id/acceleration_spinner_start"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_start"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_start"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acceleration_spinner_start" />
+        app:layout_constraintTop_toTopOf="@+id/spinner_start" />
 
     <TextView
         android:id="@+id/text_finish"
@@ -113,10 +113,10 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/acceleration_spinner_finish"
-        app:layout_constraintEnd_toStartOf="@+id/acceleration_spinner_finish"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_finish"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_finish"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/acceleration_spinner_finish"
+        app:layout_constraintTop_toTopOf="@+id/spinner_finish"
         />
 
 

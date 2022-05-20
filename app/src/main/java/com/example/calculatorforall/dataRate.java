@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
 
 public class dataRate extends AppCompatActivity {
     private EditText startValue;
@@ -22,8 +23,6 @@ public class dataRate extends AppCompatActivity {
     private String spinnerStartValue;
     private String spinnerFinishValue;
 
-    private int spinnerStartValuePosit;
-    private int spinnerFinishValuePosit;
     private int UserValue;
 
     public double result;
@@ -38,7 +37,7 @@ public class dataRate extends AppCompatActivity {
         Button konvert = findViewById(R.id.konvert);
         ImageButton switch_off = findViewById(R.id.switch_off);
 
-        Spinner spinner_start = findViewById(R.id.dataRate_spinner_start);
+        Spinner spinner_start = findViewById(R.id.spinner_start);
         ArrayList<String> list = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.dataRate)));
         ArrayAdapter<String> adapter_start = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, list);
         adapter_start.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -46,7 +45,7 @@ public class dataRate extends AppCompatActivity {
         spinner_start.getSelectedItemId();
 
 
-        Spinner spinner_finish = findViewById(R.id.dataRate_spinner_finish);
+        Spinner spinner_finish = findViewById(R.id.spinner_finish);
         ArrayAdapter adapter_finish = ArrayAdapter.createFromResource(this,
                 R.array.dataRate, android.R.layout.simple_spinner_item);
         adapter_finish.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -54,11 +53,11 @@ public class dataRate extends AppCompatActivity {
 
 
         konvert.setOnClickListener(view -> {
-            spinnerStartValuePosit = spinner_start.getSelectedItemPosition();
-            spinnerFinishValuePosit = spinner_finish.getSelectedItemPosition();
+            spinnerStartValue = spinner_start.getSelectedItem().toString();
+            spinnerFinishValue = spinner_finish.getSelectedItem().toString();
             UserValue = Integer.parseInt(startValue.getText().toString().trim());
             getAnswer();
-            strResult = String.valueOf(result);
+            strResult = String.format(Locale.UK, "%.5f ", result);
             finishValue.setText(strResult);
         });
 
@@ -69,52 +68,9 @@ public class dataRate extends AppCompatActivity {
         });
     }
 
-    private void getStartPosition() {
-        switch (spinnerStartValuePosit) {
-            case 0: {
-                spinnerStartValue = "Kb/s";
-                break;
-            }
-            case 1: {
-                spinnerStartValue = "Mb/s";
-                break;
-            }
-            case 2: {
-                spinnerStartValue = "Gb/s";
-                break;
-            }
-            case 3: {
-                spinnerStartValue = "Tb/s";
-                break;
-            }
-        }
-    }
-
-    private void getFinishPosition() {
-        switch (spinnerFinishValuePosit) {
-            case 0: {
-                spinnerFinishValue = "Kb/s";
-                break;
-            }
-            case 1: {
-                spinnerFinishValue = "Mb/s";
-                break;
-            }
-            case 2: {
-                spinnerFinishValue = "Gb/s";
-                break;
-            }
-            case 3: {
-                spinnerFinishValue = "Tb/s";
-                break;
-            }
-        }
-    }
 
 
     private void getAnswer() {
-        getFinishPosition();
-        getStartPosition();
         switch (spinnerStartValue) {
             case "Kb/s":
                 switch (spinnerFinishValue) {

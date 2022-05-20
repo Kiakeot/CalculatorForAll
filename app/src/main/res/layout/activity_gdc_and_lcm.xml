@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".quadraticEquation">
+    tools:context=".GCDAndLCM">
 
     <ImageView
-        android:id="@+id/icon"
+        android:id="@+id/imageView2"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:src="@drawable/quadratic_equation_icon"
+        android:src="@drawable/no_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:background="@drawable/button_style"
         android:text="@string/off"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@+id/icon"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,103 +33,86 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quadratic_equation"
-        android:textSize="17sp"
+        android:text="@string/GCDandLCM"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/icon" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/edit_first"
-        android:layout_width="187dp"
-        android:layout_height="51dp"
+        android:id="@+id/first_number"
+        android:layout_width="185dp"
+        android:layout_height="56dp"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
-        android:hint="Старший коефіцієнт"
+        android:hint="@string/firstNumber"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="@+id/edit_second"
-        app:layout_constraintEnd_toStartOf="@+id/edit_second"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="@+id/second_number"
+        app:layout_constraintEnd_toStartOf="@+id/second_number"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/edit_second"
+        app:layout_constraintTop_toTopOf="@+id/second_number"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/edit_second"
-        android:layout_width="200dp"
-        android:layout_height="47dp"
+        android:id="@+id/second_number"
+        android:layout_width="185dp"
+        android:layout_height="56dp"
         android:layout_marginEnd="4dp"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
-        android:hint="Другий коефіцієнт"
+        android:hint="@string/secondNumber"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.247" />
 
-    <EditText
-        android:id="@+id/edit_third"
-        android:layout_width="200dp"
-        android:layout_height="47dp"
-        android:background="@drawable/edit_text_style"
-        android:gravity="center"
-        android:hint="Вільний член"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/calculate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_second" />
-
     <Button
         android:id="@+id/calculate"
         style="@style/buttonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:background="@drawable/button_style"
+        android:layout_width="wrap_content"
+        android:text="@string/calc"
+        android:layout_height="wrap_content"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
-        android:text="@string/calc"
-        app:layout_constraintBottom_toTopOf="@+id/textFirstResult"
+        app:layout_constraintBottom_toTopOf="@+id/text_lcm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_first"
-        app:layout_constraintVertical_bias="0.843" />
+        app:layout_constraintTop_toBottomOf="@+id/first_number" />
 
     <TextView
-        android:id="@+id/textFirstResult"
-        android:layout_width="201dp"
-        android:layout_height="64dp"
+        android:id="@+id/text_gdc"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
-        android:text="@string/finishValue"
-        android:textSize="17dp"
+        android:hint="@string/GDC"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_first" />
+        app:layout_constraintTop_toBottomOf="@+id/first_number" />
 
     <TextView
-        android:id="@+id/textSecondResult"
-        android:layout_width="201dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="204dp"
+        android:id="@+id/text_lcm"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
-        android:text="@string/finishValue"
-        android:textSize="17dp"
+        android:hint="@string/LCM"
+        android:textSize="20dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_first"
-        app:layout_constraintVertical_bias="0.501" />
+        app:layout_constraintBottom_toBottomOf="@+id/text_gdc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_gdc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

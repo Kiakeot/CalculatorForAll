@@ -28,19 +28,16 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
         arrayList.add(new ItemListModel(getString(R.string.square),getResources().getDrawable(R.drawable.square_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.squareConvertor),getResources().getDrawable(R.drawable.squareconvertor_icon)));
         arrayList.add(new ItemListModel(getString(R.string.value),getResources().getDrawable(R.drawable.value_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.valueconvertor_icon)));
         arrayList.add(new ItemListModel(getString(R.string.trigonometry),getResources().getDrawable(R.drawable.trigonometry_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.squareConvertor),getResources().getDrawable(R.drawable.physik_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.physik_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 
-        buoff.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(geometry.this,switch_off.class);
-                startActivity(intent);
-            }
+        buoff.setOnClickListener(v -> {
+            Intent intent = new Intent(geometry.this,switch_off.class);
+            startActivity(intent);
         });
     }
 
@@ -52,15 +49,19 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
                 startActivity(intent);
                 break;
             case 1:
-                intent = new Intent(geometry.this, value.class);
+                intent = new Intent(geometry.this, SquareConvertor.class);
                 startActivity(intent);
                 break;
             case 2:
-                intent = new Intent(geometry.this, trigonometry.class);
+                intent = new Intent(geometry.this, value.class);
                 startActivity(intent);
                 break;
             case 3:
                 intent = new Intent(geometry.this, ValueConvertor.class);
+                startActivity(intent);
+                break;
+            case 4:
+                intent = new Intent(geometry.this, trigonometry.class);
                 startActivity(intent);
                 break;
         }

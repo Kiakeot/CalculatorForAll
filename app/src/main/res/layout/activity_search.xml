@@ -9,9 +9,31 @@
     android:background="@color/background"
     tools:context=".search">
 
+    <Button
+        android:id="@+id/switch_off"
+        style="@style/buttonStyle"
+        android:background="@drawable/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вимкнення"
+        />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        android:hint="@string/search"
+        android:inputType="number"
+        android:background="@drawable/edit_text_style"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_algebra"
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
         />
+
 </LinearLayout>

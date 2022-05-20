@@ -1,5 +1,6 @@
 package com.example.calculatorforall;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -55,23 +56,25 @@ public class date extends AppCompatActivity {
         calculate.setOnClickListener(v -> differenceBetweenTwoTimes(firstDateArray, secondDateArray));
     }
 
+    @SuppressLint("SetTextI18n")
     private void getFirstDate(Long selection) {
         Calendar firstCalendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         firstCalendar.setTimeInMillis(selection);
         SimpleDateFormat firstFormat = new SimpleDateFormat("MM.dd.yyyy");
         String firstFormattedDate = firstFormat.format(firstCalendar.getTime());
         firstDateArray = splitString(firstFormattedDate);
-        firstDateButton.setText(firstFormattedDate);
+        firstDateButton.setText(Integer.parseInt(firstDateArray[1]) + " "  + getMonthFormat(Integer.parseInt(firstDateArray[0]))  + " " + Integer.parseInt(firstDateArray[2]));
     }
 
 
+    @SuppressLint("SetTextI18n")
     private void getSecondDate(Long selection) {
         Calendar secondCalendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
         secondCalendar.setTimeInMillis(selection);
         SimpleDateFormat secondFormat = new SimpleDateFormat("MM.dd.yyyy");
         String secondFormattedDate = secondFormat.format(secondCalendar.getTime());
         secondDateArray = splitString(secondFormattedDate);
-        secondDateButton.setText(secondFormattedDate);
+        secondDateButton.setText(Integer.parseInt(secondDateArray[1]) + " "  + getMonthFormat(Integer.parseInt(secondDateArray[0]))  + " " + Integer.parseInt(secondDateArray[2]));
     }
 
     public static String[] splitString(String s) {
@@ -111,35 +114,57 @@ public class date extends AppCompatActivity {
         int years = Math.abs(period.getYears());
         int months = Math.abs(period.getMonths());
         int days = Math.abs(period.getDays());
-        String date = years + " years " + months + " months " + days + " days";
+        String date = years + " year(s) " + months + " month(s) " + days + " day(s)";
         TextView calculatedText = findViewById(R.id.difference_between_dates_text);
+        if(years == 0 && months == 0 && days !=0){
+            date = days + " day(s)";
+        }
+        if(years == 0 && months != 0 && days != 0){
+            date = months + " month(s) " + days + " day(s)";
+        }
+        if(years == 0 && months != 0 && days == 0){
+            date = months + " month(s)";
+        }
+        if(years != 0 && months == 0 && days == 0){
+            date = years + " year(s)";
+        }
+        if(years != 0 && months != 0 && days == 0){
+            date = years + " year(s) " + months + " month(s)";
+        }
+        if(years != 0 && months == 0 && days != 0){
+            date = years + " year(s) " + days + " day(s)";
+        }
+        if(years != 0 && months != 0 && days != 0){
+            date = years + " year(s) " + months + " month(s) " + days + " day(s)";
+        }
         calculatedText.setText(date);
     }
+
+    private String getMonthFormat(int month) {
+        if(month == 1)
+            return getString(R.string.January);
+        if(month == 2)
+            return getString(R.string.February);
+        if(month == 3)
+            return getString(R.string.March);
+        if(month == 4)
+            return getString(R.string.April);
+        if(month == 5)
+            return getString(R.string.May);
+        if(month == 6)
+            return getString(R.string.June);
+        if(month == 7)
+            return getString(R.string.July);
+        if(month == 8)
+            return getString(R.string.August);
+        if(month == 9)
+            return getString(R.string.September);
+        if(month == 10)
+            return getString(R.string.October);
+        if(month == 11)
+            return getString(R.string.November);
+        if(month == 12)
+            return getString(R.string.December);
+        return getString(R.string.January);
+    }
 }
-//    private String getMonthFormat(int month) {
-//        if(month == 1)
-//            return "Січ.";
-//        if(month == 2)
-//            return "Лют.";
-//        if(month == 3)
-//            return "Бер.";
-//        if(month == 4)
-//            return "Кві.";
-//        if(month == 5)
-//            return "Тра.";
-//        if(month == 6)
-//            return "Чер.";
-//        if(month == 7)
-//            return "Лип.";
-//        if(month == 8)
-//            return "Сер.";
-//        if(month == 9)
-//            return "Вер.";
-//        if(month == 10)
-//            return "Жов.";
-//        if(month == 11)
-//            return "Лис.";
-//        if(month == 12)
-//            return "Гру.";
-//        return "Січ.";
-//    } }

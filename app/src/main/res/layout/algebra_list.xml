@@ -23,6 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:text="Main Title"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold"

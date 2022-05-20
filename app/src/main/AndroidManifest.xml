@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.calculatorforall">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,10 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculatorForAll">
         <activity
+            android:name=".SquareConvertor"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/SplashTheme"
             android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -134,12 +138,7 @@
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".numberSystems"
-            android:exported="false"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity" />
-        <activity
-            android:name=".roman"
+            android:name=".GCDAndLCM"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
@@ -202,7 +201,7 @@
             android:name=".MainActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"/>
+            tools:ignore="LockedOrientationActivity" />
     </application>
 
 </manifest>

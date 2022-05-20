@@ -30,17 +30,13 @@ public class algebra extends AppCompatActivity implements OnClickInterface {
         arrayList.add(new ItemListModel(getString(R.string.linear_function),getResources().getDrawable(R.drawable.linear_function_icon)));
         arrayList.add(new ItemListModel(getString(R.string.quadratic_equation),getResources().getDrawable(R.drawable.quadratic_equation_icon)));
         arrayList.add(new ItemListModel(getString(R.string.random),getResources().getDrawable(R.drawable.random_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.roman),getResources().getDrawable(R.drawable.roman_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.numberSystems),getResources().getDrawable(R.drawable.system_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.GCDandLCM),getResources().getDrawable(R.drawable.no_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 
-        buoff.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(algebra.this,switch_off.class);
-                startActivity(intent);
-            }
+        buoff.setOnClickListener(v -> {
+            Intent intent = new Intent(algebra.this,switch_off.class);
+            startActivity(intent);
         });
     }
 
@@ -68,11 +64,7 @@ public class algebra extends AppCompatActivity implements OnClickInterface {
                 startActivity(intent);
                 break;
             case 5:
-                intent = new Intent(algebra.this, roman.class);
-                startActivity(intent);
-                break;
-            case 6:
-                intent = new Intent(algebra.this, numberSystems.class);
+                intent = new Intent(algebra.this, GCDAndLCM.class);
                 startActivity(intent);
                 break;
         }
