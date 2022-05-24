@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,6 +48,22 @@ public class percentage extends AppCompatActivity {
             startActivity(intent);
         });
 
+        spinner_start.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long id) {
+                if(position == 0){
+                    textFinish.setHint(R.string.Increment);
+                }
+                if(position == 1){
+                    textFinish.setHint(R.string.Decrease);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+            }
+        });
+
         calculate.setOnClickListener(view -> {
              changes = spinner_start.getSelectedItem().toString();
              allSuma = Integer.parseInt(editSuma.getText().toString().trim());
@@ -59,11 +76,11 @@ public class percentage extends AppCompatActivity {
 
     private void getAnswer() {
         switch(changes){
-            case "Збільшення":{
+            case "Increment":{
                 result = allSuma + allSuma*(percent/100);
                 break;
             }
-            case "Зменшення":{
+            case "Decrease":{
                 result = allSuma - allSuma*(percent/100);
                 break;
             }

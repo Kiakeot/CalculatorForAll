@@ -28,9 +28,9 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
         arrayList.add(new ItemListModel(getString(R.string.square),getResources().getDrawable(R.drawable.square_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.squareConvertor),getResources().getDrawable(R.drawable.squareconvertor_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.squareConvertor),getResources().getDrawable(R.drawable.square_convertor_icon)));
         arrayList.add(new ItemListModel(getString(R.string.value),getResources().getDrawable(R.drawable.value_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.valueconvertor_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.value_convertor_icon)));
         arrayList.add(new ItemListModel(getString(R.string.trigonometry),getResources().getDrawable(R.drawable.trigonometry_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);

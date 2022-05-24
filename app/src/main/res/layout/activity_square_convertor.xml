@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        android:src="@drawable/squareconvertor_icon" />
+        android:src="@drawable/square_convertor_icon" />
 
     <Button
         style="@style/buttonStyle"
@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="160dp"
-        android:layout_height="39dp"
+        android:layout_width="285dp"
+        android:layout_height="42dp"
         android:gravity="center"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"

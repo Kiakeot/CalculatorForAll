@@ -25,7 +25,7 @@ public class life extends AppCompatActivity implements OnClickInterface {
         Button buoff = (Button) findViewById(R.id.buoff);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
-        arrayList.add(new ItemListModel(getString(R.string.date),getResources().getDrawable(R.drawable.data_icon)));
+        arrayList.add(new ItemListModel(getString(R.string.data),getResources().getDrawable(R.drawable.data_icon)));
         arrayList.add(new ItemListModel(getString(R.string.BMI),getResources().getDrawable(R.drawable.bmi_icon)));
         arrayList.add(new ItemListModel(getString(R.string.fuel),getResources().getDrawable(R.drawable.fuel_icon)));
         arrayList.add(new ItemListModel(getString(R.string.dataStorage),getResources().getDrawable(R.drawable.data_storage_icon)));

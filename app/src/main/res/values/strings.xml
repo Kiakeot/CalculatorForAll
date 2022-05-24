@@ -1,89 +1,117 @@
 <resources>
     <string name="app_name">CalculatorForAll</string>
-    <string name="percentage">Проценти</string>
-    <string name="average">Середнє</string>
-    <string name="proportions">Пропорції</string>
-    <string name="random">Генератор випадкових чисел</string>
-    <string name="data">Різниця між датами</string>
-    <string name="BMI">ІМТ</string>
-    <string name="fuel">Об\'єм палива</string>
-    <string name="dataStorage">Конвертація збереження даних</string>
-    <string name="dataRate">Конвертація швидкості передачі даних</string>
-    <string name="square">Площа</string>
-    <string name="value">Обєм</string>
-    <string name="trigonometry">Тригонометрія</string>
-    <string name="squareConvertor">Конвертація площі</string>
-    <string name="valueConvertor">Конвертація обєму</string>
-    <string name="angel">Конвертація градусних мір</string>
-    <string name="power">Потужність</string>
-    <string name="temperature">Температура</string>
-    <string name="acceleration">Прискорення</string>
-    <string name="speed">Швидкість</string>
-    <string name="pressure">Конвертація тиску</string>
-    <string name="weight">Конвертація ваги</string>
-    <string name="currency">Конвертор валют</string>
-    <string name="tip">Чаєві</string>
-    <string name="credit">Кредит</string>
-    <string name="deposit">Депозит</string>
-    <string name="tax">Податки</string>
-    <string name="off">Вимкнення</string>
-    <string name="linear_function">Лінійне рівняння</string>
-    <string name="quadratic_equation">Квадратне рівняння</string>
-    <string name="konv">Конвертувати</string>
-    <string name="calc">Розрахувати</string>
-    <string name="firstNumber">Перше значення</string>
-    <string name="secondNumber">Друге значення</string>
-    <string name="third">Третє значення</string>
-    <string name="fourth">Четверте значення</string>
-    <string name="vaga">Ваша вага(кг)</string>
-    <string name="visota">Ваш зріст(см)</string>
-    <string name="finishValue">Остаточне значення</string>
-    <string name="geometry">Геометрія</string>
-    <string name="algebra">Алгебра</string>
-    <string name="finance">Фінанси</string>
-    <string name="physik">Фізика</string>
-    <string name="life">Побутове</string>
-    <string name="of">Вимк.</string>
-    <string name="allSum">Введіть всю суму</string>
-    <string name="percentPerMonth">Введіть процент(за міс.)</string>
-    <string name="fullData">Введіть дату(в міс.)</string>
-    <string name="startCurrency">Початкова валюта</string>
-    <string name="YourUp">Ваш заробіток</string>
-    <string name="valueWithX">Значення біля X(A)</string>
-    <string name="valueWithOutX">Значення без Х(B)</string>
-    <string name="dataDif">Різниця між датами</string>
-    <string name="percent">Введіть процент</string>
-    <string name="YourUpOrDown">Ваш приріст/зменшення</string>
-    <string name="firstBarrier">Початкове значення</string>
-    <string name="secondBarrier">Останнє значення</string>
-    <string name="allWork">Уся робота</string>
-    <string name="allTimes">Весь час</string>
-    <string name="voltage">Напруга</string>
-    <string name="amperage">Сила струму</string>
-    <string name="resistance">Опір</string>
-    <string name="lessBarrier">Менше число</string>
-    <string name="LargestBarrier">Більше число</string>
-    <string name="SecondDate">Виберіть другу дату</string>
-    <string name="firstDate">Виберіть першу дату</string>
-    <string name="January">Січ.</string>
-    <string name="February">Лют.</string>
-    <string name="March">Бер.</string>
-    <string name="April">Кві.</string>
-    <string name="May">Тра.</string>
-    <string name="June">Чер.</string>
-    <string name="July">Лип.</string>
-    <string name="August">Сер.</string>
-    <string name="September">Вер.</string>
-    <string name="October">Жов.</string>
-    <string name="November">Лис.</string>
-    <string name="December">Гру.</string>
-    <string name="GCDandLCM">НСД та НСК</string>
-    <string name="search">Пошук</string>
-    <string name="GDC">НСД</string>
-    <string name="LCM">НСК</string>
+    <string name="percentage">percentage</string>
+    <string name="average">average</string>
+    <string name="proportions">proportions</string>
+    <string name="random">random number generator</string>
+    <string name="data">data</string>
+    <string name="BMI">BMI</string>
+    <string name="fuel">fuel volume</string>
+    <string name="dataStorage">Data storage conversion</string>
+    <string name="dataRate">Data rate conversion</string>
+    <string name="square">Areas</string>
+    <string name="value">Value</string>
+    <string name="trigonometry">Trigonometry</string>
+    <string name="squareConvertor">Area conversion</string>
+    <string name="valueConvertor">Volume conversion</string>
+    <string name="angel">Conversion of degree measures</string>
+    <string name="power">Power</string>
+    <string name="temperature">Temperature</string>
+    <string name="acceleration">Acceleration</string>
+    <string name="speed">Speed</string>
+    <string name="pressure">Pressure conversion</string>
+    <string name="weight">Weight conversion</string>
+    <string name="currency">Currency converter</string>
+    <string name="tip">Tips</string>
+    <string name="credit">Credit</string>
+    <string name="deposit">Deposit</string>
+    <string name="tax">Sales tax</string>
+    <string name="off">Shutdown</string>
+    <string name="linear_function">Linear equation</string>
+    <string name="quadratic_equation">Quadratic equation</string>
+    <string name="konv">Convert</string>
+    <string name="calc">Calculate</string>
+    <string name="firstNumber">The first value</string>
+    <string name="secondNumber">The second meaning</string>
+    <string name="third">The third value</string>
+    <string name="fourth">The fourth value</string>
+    <string name="vaga">Your weight (kg)</string>
+    <string name="visota">Your height (cm)</string>
+    <string name="finishValue">The final value</string>
+    <string name="geometry">Geometry</string>
+    <string name="algebra">Algebra</string>
+    <string name="finance">Finances</string>
+    <string name="physik">Physics</string>
+    <string name="life">household</string>
+    <string name="of">Off</string>
+    <string name="allSum">Enter the full amount</string>
+    <string name="percentPerMonth">Enter interest (per month)</string>
+    <string name="fullData">Enter the date (in months)</string>
+    <string name="startCurrency">Initial currency</string>
+    <string name="YourUp">Your earnings</string>
+    <string name="valueWithX">Values near X (A)</string>
+    <string name="valueWithOutX">Values without X (B)</string>
+    <string name="dataDif">Difference between dates</string>
+    <string name="percent">Enter the percentage</string>
+    <string name="YourUpOrDown">Your increase / decrease</string>
+    <string name="firstBarrier">Initial value</string>
+    <string name="secondBarrier">The last meaning</string>
+    <string name="allWork">All work</string>
+    <string name="allTimes">All time</string>
+    <string name="voltage">High-voltage</string>
+    <string name="amperage">Amperage</string>
+    <string name="resistance">Resistance</string>
+    <string name="lessBarrier">Smaller number</string>
+    <string name="LargestBarrier">More number</string>
+    <string name="SecondDate">Choose a second date</string>
+    <string name="firstDate">Choose the first date</string>
+    <string name="January">Jan.</string>
+    <string name="February">Feb.</string>
+    <string name="March">Mar.</string>
+    <string name="April">Apr.</string>
+    <string name="May">May</string>
+    <string name="June">Jun.</string>
+    <string name="July">Jul.</string>
+    <string name="August">Aug.</string>
+    <string name="September">Sep.</string>
+    <string name="October">O</string>
+    <string name="November">Nov.</string>
+    <string name="December">Dec.</string>
+    <string name="GCDandLCM">GCD and LCM</string>
+    <string name="search">search</string>
+    <string name="GDC">GDC</string>
+    <string name="LCM">LCM</string>
+    <string name="zina">Price per product</string>
+    <string name="oneTax">Tax per unit</string>
+    <string name="Increment">Increment</string>
+    <string name="Decrease">Decrease</string>
+    <string name="SumOfTax">Value of Tax</string>
+    <string name="SumBil">Check amount</string>
+    <string name="People">Number of people</string>
+    <string name="feeFromEach">Fee from each person</string>
+    <string-array name="trigonometryList">
+        <item>Sine</item>
+        <item>Cosine</item>
+        <item>Tangent</item>
+        <item>Сotangent</item>
+        <item>Arcsine</item>
+        <item>Arccosine</item>
+        <item>Arctangent</item>
+        <item>Arccotangent</item>
+    </string-array>
+    <string-array name="country">
+        <item>France</item>
+        <item>Italy</item>
+        <item>Germany</item>
+        <item>Ukraine</item>
+        <item>Netherlands</item>
+        <item>USA</item>
+        <item>Japan</item>
+        <item>Czech Republic</item>
+    </string-array>
     <string-array name="upOrDown">
-        <item>Збільшення</item>
-        <item>Зменшення</item>
+        <item>Increment</item>
+        <item>Decrease</item>
     </string-array>
     <string-array name="znak">
         <item>+(Плюс)</item>
@@ -162,7 +190,7 @@
         <item>g</item>
         <item>kg</item>
         <item>t</item>
-        <item>f</item>
+        <item>lb(pound)</item>
     </string-array>
     <string-array name="distance">
         <item>mm</item>
