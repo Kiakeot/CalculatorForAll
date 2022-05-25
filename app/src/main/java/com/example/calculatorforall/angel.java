@@ -55,7 +55,12 @@ public class angel extends AppCompatActivity {
         konvert.setOnClickListener(view -> {
             startSystem = spinner_start.getSelectedItem().toString();
             finishSystem = spinner_finish.getSelectedItem().toString();
-            startNumber = Integer.parseInt(edit_text_start.getText().toString().trim());
+            try {
+                startNumber = Integer.parseInt(edit_text_start.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                edit_text_start.setText(null);
+            }
             convertData();
             strResult = String.format(Locale.UK, "%.5f ", result);
             textFinish.setText(strResult);

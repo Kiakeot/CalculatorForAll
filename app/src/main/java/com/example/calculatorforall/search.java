@@ -40,10 +40,12 @@ public class search extends AppCompatActivity implements OnClickInterface {
         itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setAdapter(itemAdapter);
+
         switch_off.setOnClickListener(view -> {
             Intent intent = new Intent(search.this, switch_off.class);
             startActivity(intent);
         });
+
         searchView = findViewById(R.id.edit_text);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -84,34 +86,34 @@ public class search extends AppCompatActivity implements OnClickInterface {
 
 
     private void createAllList() {
-        arrayList.add(new ItemListModel(getString(R.string.square), ResourcesCompat.getDrawable(getResources(),R.drawable.square_icon,getTheme())));
-        arrayList.add(new ItemListModel(getString(R.string.value), getResources().getDrawable(R.drawable.value_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.trigonometry), getResources().getDrawable(R.drawable.trigonometry_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.squareConvertor), getResources().getDrawable(R.drawable.no_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.valueConvertor), getResources().getDrawable(R.drawable.no_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.percentage), getResources().getDrawable(R.drawable.percent_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.average), getResources().getDrawable(R.drawable.average_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.linear_function), getResources().getDrawable(R.drawable.linear_function_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.quadratic_equation), getResources().getDrawable(R.drawable.quadratic_equation_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.random), getResources().getDrawable(R.drawable.random_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.GCDandLCM), getResources().getDrawable(R.drawable.no_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.currency), getResources().getDrawable(R.drawable.currency_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.tip), getResources().getDrawable(R.drawable.tips_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.credit), getResources().getDrawable(R.drawable.credit_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.deposit), getResources().getDrawable(R.drawable.deposit_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.tax), getResources().getDrawable(R.drawable.tax_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.data), getResources().getDrawable(R.drawable.data_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.BMI), getResources().getDrawable(R.drawable.bmi_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.fuel), getResources().getDrawable(R.drawable.fuel_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.dataStorage), getResources().getDrawable(R.drawable.data_storage_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.dataRate), getResources().getDrawable(R.drawable.data_rate_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.angel), getResources().getDrawable(R.drawable.angel_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.power), getResources().getDrawable(R.drawable.power_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.temperature), getResources().getDrawable(R.drawable.temperature_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.acceleration), getResources().getDrawable(R.drawable.acceleration_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.speed), getResources().getDrawable(R.drawable.speed_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.pressure), getResources().getDrawable(R.drawable.pressure_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.weight), getResources().getDrawable(R.drawable.weight_icon)));
+        arrayList.add(new ItemListModel(0,getString(R.string.square), ResourcesCompat.getDrawable(getResources(),R.drawable.square_icon,getTheme())));
+        arrayList.add(new ItemListModel(1,getString(R.string.value), getResources().getDrawable(R.drawable.value_icon)));
+        arrayList.add(new ItemListModel(2,getString(R.string.trigonometry), getResources().getDrawable(R.drawable.trigonometry_icon)));
+        arrayList.add(new ItemListModel(3,getString(R.string.squareConvertor), getResources().getDrawable(R.drawable.no_icon)));
+        arrayList.add(new ItemListModel(4,getString(R.string.valueConvertor), getResources().getDrawable(R.drawable.no_icon)));
+        arrayList.add(new ItemListModel(5,getString(R.string.percentage), getResources().getDrawable(R.drawable.percent_icon)));
+        arrayList.add(new ItemListModel(6,getString(R.string.average), getResources().getDrawable(R.drawable.average_icon)));
+        arrayList.add(new ItemListModel(7,getString(R.string.linear_function), getResources().getDrawable(R.drawable.linear_function_icon)));
+        arrayList.add(new ItemListModel(8,getString(R.string.quadratic_equation), getResources().getDrawable(R.drawable.quadratic_equation_icon)));
+        arrayList.add(new ItemListModel(9,getString(R.string.random), getResources().getDrawable(R.drawable.random_icon)));
+        arrayList.add(new ItemListModel(10,getString(R.string.GCDandLCM), getResources().getDrawable(R.drawable.no_icon)));
+        arrayList.add(new ItemListModel(11,getString(R.string.currency), getResources().getDrawable(R.drawable.currency_icon)));
+        arrayList.add(new ItemListModel(12,getString(R.string.tip), getResources().getDrawable(R.drawable.tips_icon)));
+        arrayList.add(new ItemListModel(13,getString(R.string.credit), getResources().getDrawable(R.drawable.credit_icon)));
+        arrayList.add(new ItemListModel(14,getString(R.string.deposit), getResources().getDrawable(R.drawable.deposit_icon)));
+        arrayList.add(new ItemListModel(15,getString(R.string.tax), getResources().getDrawable(R.drawable.tax_icon)));
+        arrayList.add(new ItemListModel(16,getString(R.string.data), getResources().getDrawable(R.drawable.data_icon)));
+        arrayList.add(new ItemListModel(17,getString(R.string.BMI), getResources().getDrawable(R.drawable.bmi_icon)));
+        arrayList.add(new ItemListModel(18,getString(R.string.fuel), getResources().getDrawable(R.drawable.fuel_icon)));
+        arrayList.add(new ItemListModel(19,getString(R.string.dataStorage), getResources().getDrawable(R.drawable.data_storage_icon)));
+        arrayList.add(new ItemListModel(20,getString(R.string.dataRate), getResources().getDrawable(R.drawable.data_rate_icon)));
+        arrayList.add(new ItemListModel(21,getString(R.string.angel), getResources().getDrawable(R.drawable.angel_icon)));
+        arrayList.add(new ItemListModel(22,getString(R.string.power), getResources().getDrawable(R.drawable.power_icon)));
+        arrayList.add(new ItemListModel(23,getString(R.string.temperature), getResources().getDrawable(R.drawable.temperature_icon)));
+        arrayList.add(new ItemListModel(24,getString(R.string.acceleration), getResources().getDrawable(R.drawable.acceleration_icon)));
+        arrayList.add(new ItemListModel(25,getString(R.string.speed), getResources().getDrawable(R.drawable.speed_icon)));
+        arrayList.add(new ItemListModel(26,getString(R.string.pressure), getResources().getDrawable(R.drawable.pressure_icon)));
+        arrayList.add(new ItemListModel(27,getString(R.string.weight), getResources().getDrawable(R.drawable.weight_icon)));
     }
 
     @Override

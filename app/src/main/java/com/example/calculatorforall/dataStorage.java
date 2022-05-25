@@ -56,7 +56,12 @@ public class dataStorage extends AppCompatActivity {
         konvert.setOnClickListener(view -> {
             spinnerStartValuePosit = spinner_start.getSelectedItemPosition();
             spinnerFinishValuePosit = spinner_finish.getSelectedItemPosition();
-            UserValue = Integer.parseInt(startValue.getText().toString().trim());
+            try {
+                UserValue = Integer.parseInt(startValue.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                startValue.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             finishValue.setText(strResult);

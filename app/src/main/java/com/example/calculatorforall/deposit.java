@@ -32,9 +32,16 @@ public class deposit extends AppCompatActivity {
         edit_suma = findViewById(R.id.edit_suma);
 
         calculate.setOnClickListener(view -> {
-            data = Integer.parseInt(edit_data.getText().toString().trim());
-            suma = Integer.parseInt(edit_suma.getText().toString().trim());
-            percent = Integer.parseInt(edit_percent.getText().toString().trim());
+            try {
+                data = Integer.parseInt(edit_data.getText().toString().trim());
+                suma = Integer.parseInt(edit_suma.getText().toString().trim());
+                percent = Integer.parseInt(edit_percent.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                edit_data.setText(null);
+                edit_suma.setText(null);
+                edit_percent.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             textFinish.setText(strResult);

@@ -26,11 +26,11 @@ public class finance extends AppCompatActivity implements OnClickInterface {
         RecyclerView recyclerView = findViewById(R.id.recycler_algebra);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
-        arrayList.add(new ItemListModel(getString(R.string.currency), getResources().getDrawable(R.drawable.currency_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.tip), getResources().getDrawable(R.drawable.tips_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.credit), getResources().getDrawable(R.drawable.credit_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.deposit), getResources().getDrawable(R.drawable.deposit_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.tax), getResources().getDrawable(R.drawable.tax_icon)));
+        arrayList.add(new ItemListModel(0,getString(R.string.currency), getResources().getDrawable(R.drawable.currency_icon)));
+        arrayList.add(new ItemListModel(1,getString(R.string.tip), getResources().getDrawable(R.drawable.tips_icon)));
+        arrayList.add(new ItemListModel(2,getString(R.string.credit), getResources().getDrawable(R.drawable.credit_icon)));
+        arrayList.add(new ItemListModel(3,getString(R.string.deposit), getResources().getDrawable(R.drawable.deposit_icon)));
+        arrayList.add(new ItemListModel(4,getString(R.string.tax), getResources().getDrawable(R.drawable.tax_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 

@@ -56,7 +56,12 @@ public class fuel extends AppCompatActivity {
         konvert.setOnClickListener(view -> {
             finishSystemPos = spinner_finish.getSelectedItemPosition();
             startSystemPos = spinner_start.getSelectedItemPosition();
-            startNumber = Integer.parseInt(edit_text_start.getText().toString().trim());
+            try {
+                startNumber = Integer.parseInt(edit_text_start.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                edit_text_start.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             textFinish.setText(strResult);

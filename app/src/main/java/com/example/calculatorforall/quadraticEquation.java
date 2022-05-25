@@ -43,9 +43,16 @@ public class quadraticEquation extends AppCompatActivity {
         });
 
         calculate.setOnClickListener(view -> {
-            firstNumber = Integer.parseInt(edit_first.getText().toString().trim());
-            secondNumber = Integer.parseInt(edit_second.getText().toString().trim());
-            thirdNumber = Integer.parseInt(edit_third.getText().toString().trim());
+            try {
+                firstNumber = Integer.parseInt(edit_first.getText().toString().trim());
+                secondNumber = Integer.parseInt(edit_second.getText().toString().trim());
+                thirdNumber = Integer.parseInt(edit_third.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                edit_third.setText(null);
+                edit_second.setText(null);
+                edit_first.setText(null);
+            }
             getAnswers();
             strFirstResult = String.valueOf(firstResult);
             strSecondResult = String.valueOf(secondResult);

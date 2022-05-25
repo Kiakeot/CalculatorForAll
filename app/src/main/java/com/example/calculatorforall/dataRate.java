@@ -55,7 +55,11 @@ public class dataRate extends AppCompatActivity {
         konvert.setOnClickListener(view -> {
             spinnerStartValue = spinner_start.getSelectedItem().toString();
             spinnerFinishValue = spinner_finish.getSelectedItem().toString();
-            UserValue = Integer.parseInt(startValue.getText().toString().trim());
+            try {
+                UserValue = Integer.parseInt(startValue.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+            }
             getAnswer();
             strResult = String.format(Locale.UK, "%.5f ", result);
             finishValue.setText(strResult);

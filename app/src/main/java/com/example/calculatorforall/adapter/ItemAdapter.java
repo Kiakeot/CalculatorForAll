@@ -71,6 +71,9 @@ private  ArrayList<ItemListModel> itemList;
         if (position == itemList.size()-1) {
             holder.divider.setVisibility(View.GONE);
         }
+        holder.rootContainer.setOnClickListener(view -> {
+            onClickInterface.onItemClick(itemList.get(position).getId());
+        });
     }
 
     @Override

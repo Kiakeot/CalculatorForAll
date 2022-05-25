@@ -46,8 +46,14 @@ public class GCDAndLCM extends AppCompatActivity {
         });
 
         calculate.setOnClickListener(view -> {
-            firstNumber = Integer.parseInt(edit_first.getText().toString().trim());
-            secondNumber = Integer.parseInt(edit_second.getText().toString().trim());
+            try {
+                firstNumber = Integer.parseInt(edit_first.getText().toString().trim());
+                secondNumber = Integer.parseInt(edit_second.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                edit_first.setText(null);
+                edit_second.setText(null);
+            }
             GDC = getGDC(firstNumber,secondNumber);
             LCM = getLCM(firstNumber,secondNumber);
             strGDC = String.valueOf(GDC);

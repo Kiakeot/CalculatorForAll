@@ -39,8 +39,14 @@ public class random extends AppCompatActivity {
         });
 
         calculate.setOnClickListener(view -> {
-            min = Integer.parseInt(editFirstBarrier.getText().toString().trim());
-            max = Integer.parseInt(editSecondBarrier.getText().toString().trim());
+            try {
+                min = Integer.parseInt(editFirstBarrier.getText().toString().trim());
+                max = Integer.parseInt(editSecondBarrier.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                editSecondBarrier.setText(null);
+                editFirstBarrier.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             textfinish.setText(strResult);

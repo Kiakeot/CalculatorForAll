@@ -79,8 +79,14 @@ public class power extends AppCompatActivity {
 
         calculate.setOnClickListener(view -> {
             firstSpinner = spinner_start.getSelectedItem().toString();
-            firstNumber = Integer.parseInt(editFirstNumber.getText().toString().trim());
-            secondNumber = Integer.parseInt(editSecondNumber.getText().toString().trim());
+            try {
+                firstNumber = Integer.parseInt(editFirstNumber.getText().toString().trim());
+                secondNumber = Integer.parseInt(editSecondNumber.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                editFirstNumber.setText(null);
+                editSecondNumber.setText(null);
+            }
             getAnswer();
             strResult = String.format(Locale.UK, "%.3f ", result);
             textFinish.setText(strResult);

@@ -5,6 +5,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.calculatorforall.R;
@@ -13,16 +14,18 @@ public class AdapterViewHolder extends RecyclerView.ViewHolder {
     TextView textView1;
     ImageView image1;
     View divider;
+    ConstraintLayout rootContainer;
     public AdapterViewHolder(@NonNull View itemView,OnClickInterface onClickInterface) {
         super(itemView);
+        rootContainer = itemView.findViewById(R.id.rootContainer);
         textView1 = itemView.findViewById(R.id.TextView1);
         image1 = itemView.findViewById(R.id.image1);
         divider = itemView.findViewById(R.id.divider);
-        itemView.setOnClickListener(view -> {
-            if(onClickInterface != null){
-             int position = getAdapterPosition();
-             onClickInterface.onItemClick(position);
-            }
-        });
+//        itemView.setOnClickListener(view -> {
+//            if(onClickInterface != null){
+//             int position = getAdapterPosition();
+//             onClickInterface.onItemClick(position);
+//            }
+//        });
     }
 }

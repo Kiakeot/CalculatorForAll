@@ -48,7 +48,12 @@ public class trigonometry extends AppCompatActivity {
 
         calculate.setOnClickListener(view -> {
             spinnerValue = spinner_start.getSelectedItem().toString();
-            startNumber = Integer.parseInt(edit_number.getText().toString().trim());
+            try {
+                startNumber = Integer.parseInt(edit_number.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                edit_number.setText(null);
+            }
             getAnswer();
             strResult = String.format(Locale.UK, "%.5f ", result);
             textFinish.setText(strResult);

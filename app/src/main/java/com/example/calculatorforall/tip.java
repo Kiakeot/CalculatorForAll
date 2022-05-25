@@ -45,8 +45,14 @@ public class tip extends AppCompatActivity {
 
         calculate.setOnClickListener(view -> {
             spinnerValue = spinner_finish.getSelectedItem().toString();
-            firstNumber = Integer.parseInt(editBill.getText().toString().trim());
-            secondNumber = Integer.parseInt(editPeople.getText().toString().trim());
+            try {
+                firstNumber = Integer.parseInt(editBill.getText().toString().trim());
+                secondNumber = Integer.parseInt(editPeople.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                editPeople.setText(null);
+                editBill.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             textFinish.setText(strResult);

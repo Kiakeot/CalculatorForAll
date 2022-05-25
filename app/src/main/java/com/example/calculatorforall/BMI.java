@@ -36,8 +36,14 @@ public class BMI extends AppCompatActivity {
 
 
         calculate.setOnClickListener(view -> {
-            Vaga = Integer.parseInt(editVaga.getText().toString().trim());
-            SmSrist = Integer.parseInt(editSrist.getText().toString().trim());
+            try {
+                Vaga = Integer.parseInt(editVaga.getText().toString().trim());
+                SmSrist = Integer.parseInt(editSrist.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                editVaga.setText(null);
+                editSrist.setText(null);
+            }
             getAnswer();
             strResult = String.format(Locale.UK, "%.2f ", result);
             textFinish.setText(strResult);

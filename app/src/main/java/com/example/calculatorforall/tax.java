@@ -53,8 +53,14 @@ public class tax extends AppCompatActivity {
 
         calculate.setOnClickListener(view -> {
             changes = spinner_start.getSelectedItem().toString();
-            allSuma = Integer.parseInt(editSuma.getText().toString().trim());
-            percent = Integer.parseInt(editPercent.getText().toString().trim());
+            try {
+                allSuma = Integer.parseInt(editSuma.getText().toString().trim());
+                percent = Integer.parseInt(editPercent.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                editPercent.setText(null);
+                editSuma.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             strTaxValue = String.valueOf(taxValue);

@@ -55,7 +55,12 @@ public class ValueConvertor extends AppCompatActivity {
         konvert.setOnClickListener(view -> {
             firstSpinner = spinner_start.getSelectedItem().toString();
             secondSpinner = spinner_finish.getSelectedItem().toString();
-            startNumber = Integer.parseInt(editNumber.getText().toString().trim());
+            try {
+                startNumber = Integer.parseInt(editNumber.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                editNumber.setText(null);
+            }
             getAnswer();
             strResult = String.format(Locale.UK, "%.5f ", result);
             textFinish.setText(strResult);

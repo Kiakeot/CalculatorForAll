@@ -1,6 +1,9 @@
 package com.example.calculatorforall;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -102,7 +105,16 @@ public class currency extends AppCompatActivity {
         convert.setOnClickListener(view -> {
             firstCurrency = spinner_start.getSelectedItem().toString();
             secondCurrency = spinner_finish.getSelectedItem().toString();
-            startNumber = Integer.parseInt(edit_text_start.getText().toString().trim());
+            try {
+                startNumber = Integer.parseInt(edit_text_start.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                edit_text_start.setText(null);
+            }
+            if(!isOnline()){
+                new InternetDialog(this).show();
+                edit_text_start.setText(null);
+            }
             getAnswer();
             strResult = String.format(Locale.UK, "%.3f ", result);
             textFinish.setText(strResult);
@@ -125,6 +137,39 @@ public class currency extends AppCompatActivity {
             }
         }
     }
+
+
+    protected boolean isOnline() {
+        String cs = Context.CONNECTIVITY_SERVICE;
+        ConnectivityManager cm = (ConnectivityManager)
+                getSystemService(cs);
+        if (cm.getActiveNetworkInfo() == null) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+//    public static boolean hasConnection(final Context context)
+//    {
+//        ConnectivityManager cm = (ConnectivityManager)context.getSystemService(Context.CONNECTIVITY_SERVICE);
+//        NetworkInfo wifiInfo = cm.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+//        if (wifiInfo != null && wifiInfo.isConnected())
+//        {
+//            return true;
+//        }
+//        wifiInfo = cm.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
+//        if (wifiInfo != null && wifiInfo.isConnected())
+//        {
+//            return true;
+//        }
+//        wifiInfo = cm.getActiveNetworkInfo();
+//        if (wifiInfo != null && wifiInfo.isConnected())
+//        {
+//            return true;
+//        }
+//        return false;
+//    }
 
     private void getAnswer() {
         getFirstCurrency();

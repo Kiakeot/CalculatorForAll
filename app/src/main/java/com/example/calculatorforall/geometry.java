@@ -27,11 +27,11 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
         Button buoff = (Button) findViewById(R.id.buoff);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
-        arrayList.add(new ItemListModel(getString(R.string.square),getResources().getDrawable(R.drawable.square_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.squareConvertor),getResources().getDrawable(R.drawable.square_convertor_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.value),getResources().getDrawable(R.drawable.value_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.value_convertor_icon)));
-        arrayList.add(new ItemListModel(getString(R.string.trigonometry),getResources().getDrawable(R.drawable.trigonometry_icon)));
+        arrayList.add(new ItemListModel(0,getString(R.string.square),getResources().getDrawable(R.drawable.square_icon)));
+        arrayList.add(new ItemListModel(1,getString(R.string.squareConvertor),getResources().getDrawable(R.drawable.square_convertor_icon)));
+        arrayList.add(new ItemListModel(2,getString(R.string.value),getResources().getDrawable(R.drawable.value_icon)));
+        arrayList.add(new ItemListModel(3,getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.value_convertor_icon)));
+        arrayList.add(new ItemListModel(4,getString(R.string.trigonometry),getResources().getDrawable(R.drawable.trigonometry_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 

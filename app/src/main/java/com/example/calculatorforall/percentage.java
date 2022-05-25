@@ -66,8 +66,14 @@ public class percentage extends AppCompatActivity {
 
         calculate.setOnClickListener(view -> {
              changes = spinner_start.getSelectedItem().toString();
-             allSuma = Integer.parseInt(editSuma.getText().toString().trim());
-             percent = Integer.parseInt(editPercent.getText().toString().trim());
+             try {
+                 allSuma = Integer.parseInt(editSuma.getText().toString().trim());
+                 percent = Integer.parseInt(editPercent.getText().toString().trim());
+             }catch (Exception e){
+                 new AlertDialog(this).show();
+                 editSuma.setText(null);
+                 editPercent.setText(null);
+             }
              getAnswer();
              strResult = String.valueOf(result);
              textFinish.setText(strResult);

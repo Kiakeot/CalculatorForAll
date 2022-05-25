@@ -46,8 +46,14 @@ public class average extends AppCompatActivity {
 
         calculate.setOnClickListener(view -> {
             spinner_pos = spinner_finish.getSelectedItemPosition();
-            firstNumber = Integer.parseInt(editFirstNumber.getText().toString().trim());
-            secondNumber = Integer.parseInt(editSecondNumber.getText().toString().trim());
+            try {
+                firstNumber = Integer.parseInt(editFirstNumber.getText().toString().trim());
+                secondNumber = Integer.parseInt(editSecondNumber.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                editFirstNumber.setText(null);
+                editSecondNumber.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             textFinish.setText(strResult);

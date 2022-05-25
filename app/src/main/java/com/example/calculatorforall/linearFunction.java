@@ -62,8 +62,14 @@ public class linearFunction extends AppCompatActivity {
         calculate.setOnClickListener(view -> {
             firstSpinnerPos = spinner_start.getSelectedItemPosition();
             secondSpinnerPos = spinner_finish.getSelectedItemPosition();
-            firstValue = Integer.parseInt(firstEdit.getText().toString().trim());
-            secondValue = Integer.parseInt(secondEdit.getText().toString().trim());
+            try {
+                firstValue = Integer.parseInt(firstEdit.getText().toString().trim());
+                secondValue = Integer.parseInt(secondEdit.getText().toString().trim());
+            }catch (Exception e){
+                new AlertDialog(this).show();
+                firstEdit.setText(null);
+                secondEdit.setText(null);
+            }
             getAnswer();
             strResult = String.valueOf(result);
             finishText.setText(strResult);
