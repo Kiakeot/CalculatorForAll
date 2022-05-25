@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.calculatorforall.R;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 public class ItemAdapter extends RecyclerView.Adapter<AdapterViewHolder> {
 private final Context context;
 private final OnClickInterface onClickInterface;
-private final ArrayList<ItemListModel> itemList;
+private  ArrayList<ItemListModel> itemList;
     @NonNull
     @Override
     public AdapterViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -27,6 +28,40 @@ private final ArrayList<ItemListModel> itemList;
         this.context = context;
         this.onClickInterface = onClickInterface;
         this.itemList = itemList;
+    }
+
+    public void setItemList(ArrayList<ItemListModel> itemList){
+        if (this.itemList == null){
+            this.itemList = itemList;
+        }else{
+            DiffUtil.DiffResult result = DiffUtil.calculateDiff(new DiffUtil.Callback() {
+                @Override
+                public int getOldListSize() {
+                    return ItemAdapter.this.itemList.size();
+                }
+
+                @Override
+                public int getNewListSize() {
+                    return itemList.size();
+                }
+
+                @Override
+                public boolean areItemsTheSame(int oldItemPosition, int newItemPosition) {
+                    return ItemAdapter.this.itemList.get(oldItemPosition).getItemTitle().equals(itemList.get(newItemPosition).getItemTitle());
+                }
+
+                @Override
+                public boolean areContentsTheSame(int oldItemPosition, int newItemPosition) {
+                    ItemListModel newItems = ItemAdapter.this.itemList.get(oldItemPosition);
+
+                    ItemListModel oldItems = itemList.get(newItemPosition);
+
+                    return oldItems.getItemTitle().equals(newItems.getItemTitle());
+                }
+            });
+            this.itemList = itemList;
+            result.dispatchUpdatesTo(this);
+        }
     }
 
     @Override

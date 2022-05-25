@@ -18,13 +18,13 @@
         android:text="Вимкнення"
         />
 
-    <EditText
+    <SearchView
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:gravity="center"
         android:hint="@string/search"
-        android:inputType="number"
+        android:layout_marginHorizontal="5dp"
         android:background="@drawable/edit_text_style"
         />
 
@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="4dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:scrollbars="vertical"
         />
 
