@@ -2,14 +2,18 @@ package com.example.calculatorforall;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.SearchView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.airbnb.lottie.Lottie;
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.calculatorforall.adapter.ItemAdapter;
 import com.example.calculatorforall.adapter.ItemListModel;
 import com.example.calculatorforall.adapter.OnClickInterface;
@@ -22,12 +26,16 @@ public class search extends AppCompatActivity implements OnClickInterface {
     private SearchView searchView;
     private ItemAdapter itemAdapter;
     private ArrayList<ItemListModel> listForItemClick;
+    private LottieAnimationView animation;
+    private TextView textError;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
         Button switch_off = findViewById(R.id.switch_off);
+        animation = findViewById(R.id.animationView);
+        textError = findViewById(R.id.text_error);
         createAllList();
         itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
@@ -45,7 +53,7 @@ public class search extends AppCompatActivity implements OnClickInterface {
 
             @Override
             public boolean onQueryTextChange(String s) {
-                filter(s.trim());
+                filter(s.trim().toLowerCase(Locale.ROOT));
                 return false;
             }
         });
@@ -64,8 +72,12 @@ public class search extends AppCompatActivity implements OnClickInterface {
         }
         if (!sortedList.isEmpty()) {
             itemAdapter.setItemList(sortedList);
+            animation.setVisibility(View.GONE);
+            textError.setVisibility(View.GONE);
         } else {
             itemAdapter.setItemList(new ArrayList<>());
+            animation.setVisibility(View.VISIBLE);
+            textError.setVisibility(View.VISIBLE);
         }
         listForItemClick = sortedList;
     }
@@ -104,10 +116,94 @@ public class search extends AppCompatActivity implements OnClickInterface {
 
     @Override
     public void onItemClick(int position) {
-        Intent intent;
+        Intent intent = null;
         switch (position){
-
+            case 0:
+                intent = new Intent(search.this,square.class);
+                break;
+            case 1:
+                intent = new Intent(search.this, value.class);
+                break;
+            case 2:
+                intent = new Intent(search.this,trigonometry.class);
+                break;
+            case 3:
+                intent = new Intent(search.this,SquareConvertor.class);
+                break;
+            case 4:
+                intent = new Intent(search.this,ValueConvertor.class);
+                break;
+            case 5:
+                intent = new Intent(search.this, percentage.class);
+                break;
+            case 6:
+                intent = new Intent(search.this,average.class);
+                break;
+            case 7:
+                intent = new Intent(search.this, linearFunction.class);
+                break;
+            case 8:
+                intent = new Intent(search.this,quadraticEquation.class);
+                break;
+            case 9:
+                intent = new Intent(search.this, random.class);
+                break;
+            case 10:
+                intent = new Intent(search.this,GCDAndLCM.class);
+                break;
+            case 11:
+                intent = new Intent(search.this,currency.class);
+                break;
+            case 12:
+                intent = new Intent(search.this,tip.class);
+                break;
+            case 13:
+                intent = new Intent(search.this, credit.class);
+                break;
+            case 14:
+                intent = new Intent(search.this,deposit.class);
+                break;
+            case 15:
+                intent = new Intent(search.this, tax.class);
+                break;
+            case 16:
+                intent = new Intent(search.this,date.class);
+                break;
+            case 17:
+                intent = new Intent(search.this, BMI.class);
+                break;
+            case 18:
+                intent = new Intent(search.this,fuel.class);
+                break;
+            case 19:
+                intent = new Intent(search.this,dataStorage.class);
+                break;
+            case 20:
+                intent = new Intent(search.this,dataRate.class);
+                break;
+            case 21:
+                intent = new Intent(search.this, angel.class);
+                break;
+            case 22:
+                intent = new Intent(search.this,power.class);
+                break;
+            case 23:
+                intent = new Intent(search.this, temperature.class);
+                break;
+            case 24:
+                intent = new Intent(search.this,acceleration.class);
+                break;
+            case 25:
+                intent = new Intent(search.this, speed.class);
+                break;
+            case 26:
+                intent = new Intent(search.this,pressure.class);
+                break;
+            case 27:
+                intent = new Intent(search.this, weight.class);
+                break;
         }
+        startActivity(intent);
     }
 }
 

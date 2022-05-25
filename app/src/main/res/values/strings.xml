@@ -89,6 +89,7 @@
     <string name="SumBil">Check amount</string>
     <string name="People">Number of people</string>
     <string name="feeFromEach">Fee from each person</string>
+    <string name="noResult">Sorry, nothing was found for your query. Make sure you typed correctly.</string>
     <string-array name="trigonometryList">
         <item>Sine</item>
         <item>Cosine</item>

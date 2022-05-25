@@ -7,14 +7,14 @@
     <string name="random">Генератор випадкових чисел</string>
     <string name="data">Різниця між датами</string>
     <string name="BMI">ІМТ</string>
-    <string name="fuel">Об\'єм палива</string>
+    <string name="fuel">Об"єм палива</string>
     <string name="dataStorage">Конвертація збереження даних</string>
     <string name="dataRate">Конвертація швидкості передачі даних</string>
     <string name="square">Площа</string>
-    <string name="value">Обєм</string>
+    <string name="value">Об"єм</string>
     <string name="trigonometry">Тригонометрія</string>
     <string name="squareConvertor">Конвертація площі</string>
-    <string name="valueConvertor">Конвертація обєму</string>
+    <string name="valueConvertor">Конвертація об"єму</string>
     <string name="angel">Конвертація градусних мір</string>
     <string name="power">Потужність</string>
     <string name="temperature">Температура</string>
@@ -90,4 +90,5 @@
     <string name="SumBil">Сума чеку</string>
     <string name="People">Кількість людей</string>
     <string name="feeFromEach">Плата з кожного</string>
+    <string name="noResult">На жаль, за Вашим запитом нічого не знайдено. Перевірте чи Ви ввели все вірно.</string>
 </resources>

@@ -93,7 +93,8 @@ public class trigonometry extends AppCompatActivity {
                 break;
             }
             case "Arccotangent":{
-                result = 1;
+                startNumberRa = Math.toRadians(startNumber);
+                result = (Math.PI/2) - Math.atan(startNumber);
                 break;
             }
         }
