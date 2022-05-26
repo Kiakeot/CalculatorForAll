@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:text="@string/ErrorText"
         android:textSize="17dp"
+        android:gravity="center_horizontal"
         app:layout_constraintBottom_toTopOf="@+id/errorButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
