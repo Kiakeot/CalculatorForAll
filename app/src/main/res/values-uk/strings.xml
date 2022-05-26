@@ -95,4 +95,10 @@
     <string name="ErrorText">Ой,здається сталося помилка.Спробуйте ще раз.</string>
     <string name="InternetError">На жаль, не вдається підключитися до сервера. Перевірте підключення до Інтернету та повторіть спробу.</string>
     <string name="ok">Ok</string>
+    <string name="Hello">Привіт!</string>
+    <string name="Welcome">Ласкаво просимо в CalculatorForAll</string>
+    <string name="answer">Відповіді</string>
+    <string name="getAnswer">Отримуйте відповіді на свої запитання відразу</string>
+    <string name="switch_off">Вимкнення</string>
+    <string name="ShutDown">Робіть вигляд вимкнення в будь-який момент</string>
 </resources>

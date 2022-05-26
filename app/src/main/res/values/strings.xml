@@ -94,6 +94,12 @@
     <string name="ErrorText">Oops, it seems like an error occurred. Please try again.</string>
     <string name="InternetError">Oops, unable to connect with the server. Check your internet connection and try again.</string>
     <string name="ok">Ok</string>
+    <string name="Hello">Hello!</string>
+    <string name="Welcome">Welcome to CalculatorForAll</string>
+    <string name="answer">Answers</string>
+    <string name="switch_off">Switch off</string>
+    <string name="getAnswer">Get answers to your questions right away</string>
+    <string name="ShutDown">Pretend to shut down at any time</string>
     <string-array name="trigonometryList">
         <item>Sine</item>
         <item>Cosine</item>
