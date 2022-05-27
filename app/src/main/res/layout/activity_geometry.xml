@@ -13,8 +13,8 @@
         android:background="@drawable/button_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/off"
-        />
+        android:text="@string/switch_off"
+        tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_geometry"

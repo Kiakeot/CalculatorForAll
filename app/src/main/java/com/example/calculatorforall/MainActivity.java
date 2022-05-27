@@ -3,6 +3,7 @@ package com.example.calculatorforall;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,21 +20,21 @@ boolean firstStart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        setTheme(R.style.Theme_CalculatorForAll);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-//        SharedPreferences settings = getSharedPreferences("PREFS",0);
-//        firstStart = settings.getBoolean("first_time_start",false);
+        SharedPreferences settings = getSharedPreferences("PREFS",0);
+        firstStart = settings.getBoolean("first_time_start",false);
 
 
-//        if(firstStart){
-//            SharedPreferences.Editor editor = settings.edit();
-//            editor.putBoolean("first_time_start",true);
-
+        if(firstStart){
+            @SuppressLint("CommitPrefEdits") SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean("first_time_start",true);
             Intent intent = new Intent(getApplicationContext(),AppIntro.class);
             startActivity(intent);
-//        }
+        }
 
         switch_off = findViewById(R.id.switch_off);
         ImageButton algebra = findViewById(R.id.algebra);
@@ -42,6 +43,21 @@ boolean firstStart;
         ImageButton life = findViewById(R.id.life);
         ImageButton finance = findViewById(R.id.finance);
         Button search = findViewById(R.id.search);
+
+
+        int currentNightMode = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        switch (currentNightMode) {
+            case Configuration.UI_MODE_NIGHT_NO:
+                    finance.setImageResource(R.drawable.ic_finance_icon_test);
+                    life.setImageResource(R.drawable.ic_life_icon_test);
+                break;
+            case Configuration.UI_MODE_NIGHT_YES:
+                    finance.setImageResource(R.drawable.temp);
+                    life.setImageResource(R.drawable.secondtemp);
+                break;
+        }
+
+
         switch_off.setOnCheckedChangeListener((buttonView, isChecked) -> {
             Intent intent1 = new Intent(MainActivity.this,switch_off.class);
             startActivity(intent1);

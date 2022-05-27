@@ -37,11 +37,9 @@ public class AppIntro extends com.github.appintro.AppIntro {
 
         setScrollDurationFactor(2);
 
-        setSystemBackButtonLocked(true);
+        setSystemBackButtonLocked(false);
 
-        setWizardMode(true);
-
-        setSkipButtonEnabled(false);
+        setSkipButtonEnabled(true);
 
         setImmersiveMode();
 
