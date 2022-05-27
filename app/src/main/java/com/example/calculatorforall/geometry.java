@@ -18,13 +18,17 @@ import java.util.ArrayList;
 
 public class geometry extends AppCompatActivity implements OnClickInterface {
     private final ArrayList<ItemListModel> arrayList = new ArrayList<>();
+
     @SuppressLint("UseCompatLoadingForDrawables")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geometry);
-        RecyclerView recyclerView = findViewById(R.id.recycler_algebra);
-        Button buoff = (Button) findViewById(R.id.buoff);
+
+        RecyclerView recyclerView = findViewById(R.id.recycler_geometry);
+        Button switch_off = findViewById(R.id.switch_off);
+
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
         arrayList.add(new ItemListModel(0,getString(R.string.square),getResources().getDrawable(R.drawable.square_icon)));
@@ -32,10 +36,11 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
         arrayList.add(new ItemListModel(2,getString(R.string.value),getResources().getDrawable(R.drawable.value_icon)));
         arrayList.add(new ItemListModel(3,getString(R.string.valueConvertor),getResources().getDrawable(R.drawable.value_convertor_icon)));
         arrayList.add(new ItemListModel(4,getString(R.string.trigonometry),getResources().getDrawable(R.drawable.trigonometry_icon)));
+        arrayList.add(new ItemListModel(5,getString(R.string.ValueSquare),getResources().getDrawable(R.drawable.no_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 
-        buoff.setOnClickListener(v -> {
+        switch_off.setOnClickListener(v -> {
             Intent intent = new Intent(geometry.this,switch_off.class);
             startActivity(intent);
         });
@@ -62,6 +67,10 @@ public class geometry extends AppCompatActivity implements OnClickInterface {
                 break;
             case 4:
                 intent = new Intent(geometry.this, trigonometry.class);
+                startActivity(intent);
+                break;
+            case 5:
+                intent = new Intent(geometry.this, ValueSquare.class);
                 startActivity(intent);
                 break;
         }

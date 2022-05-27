@@ -101,4 +101,24 @@
         <string name="getAnswer">Erhalten Sie sofort Antworten auf Ihre Fragen</string>
         <string name="switch_off">Abschalten</string>
         <string name="ShutDown">Geben Sie vor, jederzeit herunterzufahren</string>
+        <string name="prism">Prisma</string>
+        <string name="pyramid">Pyramide</string>
+        <string name="Cylinder">Zylinder</string>
+        <string name="Cone">Kegel</string>
+        <string name="Sphere">Kugel</string>
+        <string name="SquareMain">Bereich Stiftungen</string>
+        <string name="height">Höhe</string>
+        <string name="radius">Radius</string>
+        <string name="Triangel">Dreieck</string>
+        <string name="Parallelogram">Parallelogramm</string>
+        <string name="Rhombus">Rhombus</string>
+        <string name="Rectangle">Rechteck</string>
+        <string name="Trapeze">Trapez</string>
+        <string name="first_side">Erste Seite</string>
+        <string name="second_side">Zweite Seite</string>
+        <string name="ValueSquare">Seitenbereich von 3D-Figuren</string>
+
+        <string name="baseperimetr">Umfang der Basis</string>
+        <string name="apopheme">Apophem</string>
+        <string name="creature">Kreatur</string>
 </resources>

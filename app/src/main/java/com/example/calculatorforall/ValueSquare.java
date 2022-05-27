@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -15,15 +14,13 @@ import com.example.calculatorforall.adapter.OnClickInterface;
 
 import java.util.ArrayList;
 
-public class value extends AppCompatActivity implements OnClickInterface {
+public class ValueSquare extends AppCompatActivity implements OnClickInterface {
     private final ArrayList<ItemListModel> arrayList = new ArrayList<>();
-
-    @SuppressLint("UseCompatLoadingForDrawables")
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_value);
+        setContentView(R.layout.activity_value_square);
 
         RecyclerView recyclerView = findViewById(R.id.recycler_algebra);
         Button switch_off = findViewById(R.id.switch_off);
@@ -39,7 +36,7 @@ public class value extends AppCompatActivity implements OnClickInterface {
         recyclerView.setAdapter(itemAdapter);
 
         switch_off.setOnClickListener(v -> {
-            Intent intent = new Intent(value.this, switch_off.class);
+            Intent intent = new Intent(ValueSquare.this, switch_off.class);
             startActivity(intent);
         });
     }
@@ -47,23 +44,23 @@ public class value extends AppCompatActivity implements OnClickInterface {
     public void onItemClick(int position) {
         switch (position) {
             case 0:
-                Intent intent = new Intent(value.this, Prizma.class);
+                Intent intent = new Intent(ValueSquare.this, PrizmaSquare.class);
                 startActivity(intent);
                 break;
             case 1:
-                intent = new Intent(value.this, Pyramid.class);
+                intent = new Intent(ValueSquare.this, PyramidSquare.class);
                 startActivity(intent);
                 break;
             case 2:
-                intent = new Intent(value.this, Cylinder.class);
+                intent = new Intent(ValueSquare.this, CylinderSquare.class);
                 startActivity(intent);
                 break;
             case 3:
-                intent = new Intent(value.this, Cone.class);
+                intent = new Intent(ValueSquare.this, ConeSquare.class);
                 startActivity(intent);
                 break;
             case 4:
-                intent = new Intent(value.this, Sphere.class);
+                intent = new Intent(ValueSquare.this, SphereSquare.class);
                 startActivity(intent);
                 break;
         }

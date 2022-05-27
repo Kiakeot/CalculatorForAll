@@ -41,7 +41,7 @@ public class AppIntro extends com.github.appintro.AppIntro {
 
         setWizardMode(true);
 
-        setSkipButtonEnabled(true);
+        setSkipButtonEnabled(false);
 
         setImmersiveMode();
 

@@ -101,4 +101,23 @@
     <string name="getAnswer">Отримуйте відповіді на свої запитання відразу</string>
     <string name="switch_off">Вимкнення</string>
     <string name="ShutDown">Робіть вигляд вимкнення в будь-який момент</string>
+    <string name="prism">Призма</string>
+    <string name="pyramid">Піраміда</string>
+    <string name="Cylinder">Циліндр</string>
+    <string name="Cone">Конус</string>
+    <string name="Sphere">Сфера</string>
+    <string name="SquareMain">Площа основи</string>
+    <string name="height">Висота</string>
+    <string name="radius">Радіус</string>
+    <string name="Triangel">Трикутник</string>
+    <string name="Parallelogram">Паралелограм</string>
+    <string name="Rhombus">Ромб</string>
+    <string name="Rectangle">Прямокутник</string>
+    <string name="Trapeze">Трапеція</string>
+    <string name="first_side">Перша сторона</string>
+    <string name="second_side">Друга сторона</string>
+    <string name="ValueSquare">Бокова площа 3D-фігур</string>
+    <string name="baseperimetr">Периметр основи</string>
+    <string name="apopheme">Апофема</string>
+    <string name="creature">Твірна</string>
 </resources>

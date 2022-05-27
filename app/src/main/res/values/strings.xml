@@ -100,6 +100,29 @@
     <string name="switch_off">Switch off</string>
     <string name="getAnswer">Get answers to your questions right away</string>
     <string name="ShutDown">Pretend to shut down at any time</string>
+    <string name="prism">Prism</string>
+    <string name="pyramid">Pyramid</string>
+    <string name="Cylinder">Cylinder</string>
+    <string name="Cone">Cone</string>
+    <string name="Sphere">Sphere</string>
+    <string name="SquareMain">Area foundations</string>
+    <string name="height">Height</string>
+    <string name="radius">Radius</string>
+    <string name="Triangel">Triangle</string>
+    <string name="Parallelogram">Parallelogram</string>
+    <string name="Rhombus">Rhombus</string>
+    <string name="Rectangle">Rectangle</string>
+    <string name="Trapeze">Trapeze</string>
+    <string name="first_side">First side</string>
+    <string name="second_side">Second side</string>
+    <string name="ValueSquare">Side area of 3D figures</string>
+    <string name="baseperimetr">Perimeter of the base</string>
+    <string name="apopheme">Apopheme</string>
+    <string name="creature">Creature</string>
+    <string-array name="Creative">
+        <item>you have a creature</item>
+        <item>you haven`t a creature</item>
+    </string-array>
     <string-array name="trigonometryList">
         <item>Sine</item>
         <item>Cosine</item>

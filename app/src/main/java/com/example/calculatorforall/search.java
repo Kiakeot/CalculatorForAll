@@ -86,6 +86,12 @@ public class search extends AppCompatActivity implements OnClickInterface {
 
 
     private void createAllList() {
+        arrayList.add(new ItemListModel(0,getString(R.string.square), ResourcesCompat.getDrawable(getResources(),R.drawable.square_icon,getTheme())));
+        arrayList.add(new ItemListModel(1,getString(R.string.value), getResources().getDrawable(R.drawable.value_icon)));
+        arrayList.add(new ItemListModel(2,getString(R.string.trigonometry), getResources().getDrawable(R.drawable.trigonometry_icon)));
+        arrayList.add(new ItemListModel(3,getString(R.string.squareConvertor), getResources().getDrawable(R.drawable.no_icon)));
+        arrayList.add(new ItemListModel(4,getString(R.string.valueConvertor), getResources().getDrawable(R.drawable.no_icon)));
+        arrayList.add(new ItemListModel(28,getString(R.string.ValueSquare), getResources().getDrawable(R.drawable.no_icon)));
         arrayList.add(new ItemListModel(5,getString(R.string.percentage), getResources().getDrawable(R.drawable.percent_icon)));
         arrayList.add(new ItemListModel(6,getString(R.string.average), getResources().getDrawable(R.drawable.average_icon)));
         arrayList.add(new ItemListModel(7,getString(R.string.linear_function), getResources().getDrawable(R.drawable.linear_function_icon)));
@@ -109,11 +115,7 @@ public class search extends AppCompatActivity implements OnClickInterface {
         arrayList.add(new ItemListModel(25,getString(R.string.speed), getResources().getDrawable(R.drawable.speed_icon)));
         arrayList.add(new ItemListModel(26,getString(R.string.pressure), getResources().getDrawable(R.drawable.pressure_icon)));
         arrayList.add(new ItemListModel(27,getString(R.string.weight), getResources().getDrawable(R.drawable.weight_icon)));
-        arrayList.add(new ItemListModel(0,getString(R.string.square), ResourcesCompat.getDrawable(getResources(),R.drawable.square_icon,getTheme())));
-        arrayList.add(new ItemListModel(1,getString(R.string.value), getResources().getDrawable(R.drawable.value_icon)));
-        arrayList.add(new ItemListModel(2,getString(R.string.trigonometry), getResources().getDrawable(R.drawable.trigonometry_icon)));
-        arrayList.add(new ItemListModel(3,getString(R.string.squareConvertor), getResources().getDrawable(R.drawable.no_icon)));
-        arrayList.add(new ItemListModel(4,getString(R.string.valueConvertor), getResources().getDrawable(R.drawable.no_icon)));
+
     }
 
     @Override
@@ -203,6 +205,9 @@ public class search extends AppCompatActivity implements OnClickInterface {
                 break;
             case 27:
                 intent = new Intent(search.this, weight.class);
+                break;
+            case 28:
+                intent = new Intent(search.this, ValueSquare.class);
                 break;
         }
         startActivity(intent);

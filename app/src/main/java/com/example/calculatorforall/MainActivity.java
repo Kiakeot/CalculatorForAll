@@ -23,17 +23,17 @@ boolean firstStart;
         setContentView(R.layout.activity_main);
 
 
-        SharedPreferences settings = getSharedPreferences("PREFS",0);
-        firstStart = settings.getBoolean("first_time_start",false);
+//        SharedPreferences settings = getSharedPreferences("PREFS",0);
+//        firstStart = settings.getBoolean("first_time_start",false);
 
 
-        if(firstStart){
-            SharedPreferences.Editor editor = settings.edit();
-            editor.putBoolean("first_time_start",true);
+//        if(firstStart){
+//            SharedPreferences.Editor editor = settings.edit();
+//            editor.putBoolean("first_time_start",true);
 
             Intent intent = new Intent(getApplicationContext(),AppIntro.class);
             startActivity(intent);
-        }
+//        }
 
         switch_off = findViewById(R.id.switch_off);
         ImageButton algebra = findViewById(R.id.algebra);
