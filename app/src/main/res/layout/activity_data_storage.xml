@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/textView_name"
-        android:layout_width="194dp"
-        android:layout_height="56dp"
+        android:layout_width="367dp"
+        android:layout_height="61dp"
         android:gravity="center"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"

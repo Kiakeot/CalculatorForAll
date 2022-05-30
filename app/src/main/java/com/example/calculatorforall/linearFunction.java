@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Scroller;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -39,6 +41,11 @@ public class linearFunction extends AppCompatActivity {
         secondEdit = findViewById(R.id.second_number);
         finishText = findViewById(R.id.text_finish);
         Button calculate = findViewById(R.id.calculate);
+
+        secondEdit.setScroller(new Scroller(this));
+        secondEdit.setMaxLines(1);
+        secondEdit.setVerticalScrollBarEnabled(true);
+        secondEdit.setMovementMethod(new ScrollingMovementMethod());
 
         Spinner spinner_start = findViewById(R.id.spinner_first_znak);
         ArrayList<String> list = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.znak)));

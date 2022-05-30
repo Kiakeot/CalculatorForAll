@@ -31,14 +31,14 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="112dp"
-        android:layout_height="28dp"
+        android:layout_width="169dp"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
         android:text="@string/Parallelogram"
-        android:gravity="center_horizontal"
         android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

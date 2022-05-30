@@ -1,6 +1,7 @@
 package com.example.calculatorforall.adapter;
 
 import android.content.Context;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -68,6 +69,8 @@ private  ArrayList<ItemListModel> itemList;
     public void onBindViewHolder(@NonNull AdapterViewHolder holder, int position) {
         holder.textView1.setText(itemList.get(position).getItemTitle());
         holder.image1.setImageDrawable(itemList.get(position).getItemImage());
+//        holder.textView1.setMovementMethod(new ScrollingMovementMethod());
+        holder.textView1.setSelected(true);
         if (position == itemList.size()-1) {
             holder.divider.setVisibility(View.GONE);
         }

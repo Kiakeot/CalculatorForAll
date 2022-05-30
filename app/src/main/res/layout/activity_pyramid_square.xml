@@ -51,7 +51,7 @@
         android:layout_height="56dp"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
-        android:hint="Perimeter of the base"
+        android:hint="@string/baseperimetr"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/second_number"
         app:layout_constraintEnd_toStartOf="@+id/second_number"

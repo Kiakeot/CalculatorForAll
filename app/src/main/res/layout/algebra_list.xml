@@ -20,17 +20,19 @@
 
     <TextView
         android:id="@+id/TextView1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="Main Title"
+        android:layout_marginStart="8dp"
         android:ellipsize="marquee"
         android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="Main Title"
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image1"
         app:layout_constraintTop_toTopOf="parent" />
 

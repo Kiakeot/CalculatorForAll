@@ -37,13 +37,13 @@
 
     <TextView
         android:id="@+id/textView"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:gravity="center"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
-        android:layout_width="211dp"
-        android:layout_height="47dp"
-        android:gravity="center"
         android:text="@string/angel"
         android:textSize="17sp"
         android:textStyle="bold"
