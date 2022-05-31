@@ -14,20 +14,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculatorForAll">
         <activity
-            android:name=".SphereSquare"
+            android:name=".FlipACoin"
             android:exported="false"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:name=".DiceRoller"
+            android:exported="false"
+            android:label="@string/title_activity_dice_roller"
+            android:theme="@style/Theme.CalculatorForAll" />
+        <activity
+            android:name=".SphereSquare"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".ConeSquare"
             android:exported="false"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"/>
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".CylinderSquare"
             android:exported="false"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"/>
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".PyramidSquare"
             android:exported="false"

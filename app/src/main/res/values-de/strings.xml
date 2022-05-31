@@ -117,8 +117,10 @@
         <string name="first_side">Erste Seite</string>
         <string name="second_side">Zweite Seite</string>
         <string name="ValueSquare">Seitenbereich von 3D-Figuren</string>
-
         <string name="baseperimetr">Umfang der Basis</string>
         <string name="apopheme">Apophem</string>
         <string name="creature">Kreatur</string>
+        <string name="rolladice">Einen Würfel werfen</string>
+        <string name="roll">Rollen</string>
+        <string name="flipacoin">Eine Münze werfen</string>
 </resources>

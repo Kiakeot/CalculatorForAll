@@ -120,4 +120,7 @@
     <string name="baseperimetr">Периметр основи</string>
     <string name="apopheme">Апофема</string>
     <string name="creature">Твірна</string>
+    <string name="rolladice">Підкидання кубика</string>
+    <string name="roll">Підкинути</string>
+    <string name="flipacoin">Підкинути монетку</string>
 </resources>

@@ -110,8 +110,8 @@
         android:textSize="17dp"
         android:background="@drawable/edit_text_style"
         android:id="@+id/text_finish"
-        android:layout_width="183dp"
-        android:layout_height="52dp"
+        android:layout_width="198dp"
+        android:layout_height="63dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_vaga" />

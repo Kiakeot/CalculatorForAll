@@ -29,8 +29,10 @@ public class algebra extends AppCompatActivity implements OnClickInterface {
         arrayList.add(new ItemListModel(1,getString(R.string.average),getResources().getDrawable(R.drawable.average_icon)));
         arrayList.add(new ItemListModel(2,getString(R.string.linear_function),getResources().getDrawable(R.drawable.linear_function_icon)));
         arrayList.add(new ItemListModel(3,getString(R.string.quadratic_equation),getResources().getDrawable(R.drawable.quadratic_equation_icon)));
-        arrayList.add(new ItemListModel(4,getString(R.string.random),getResources().getDrawable(R.drawable.random_icon)));
+        arrayList.add(new ItemListModel(4,getString(R.string.random),getResources().getDrawable(R.drawable.dice_icon)));
         arrayList.add(new ItemListModel(5,getString(R.string.GCDandLCM),getResources().getDrawable(R.drawable.no_icon)));
+        arrayList.add(new ItemListModel(6,getString(R.string.rolladice),getResources().getDrawable(R.drawable.random_icon)));
+        arrayList.add(new ItemListModel(7,getString(R.string.flipacoin),getResources().getDrawable(R.drawable.coin_icon)));
         ItemAdapter itemAdapter = new ItemAdapter(getApplicationContext(), this, arrayList);
         recyclerView.setAdapter(itemAdapter);
 
@@ -65,6 +67,14 @@ public class algebra extends AppCompatActivity implements OnClickInterface {
                 break;
             case 5:
                 intent = new Intent(algebra.this, GCDAndLCM.class);
+                startActivity(intent);
+                break;
+            case 6:
+                intent = new Intent(algebra.this, DiceRoller.class);
+                startActivity(intent);
+                break;
+            case 7:
+                intent = new Intent(algebra.this, FlipACoin.class);
                 startActivity(intent);
                 break;
         }

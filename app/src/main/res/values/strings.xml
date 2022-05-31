@@ -119,6 +119,10 @@
     <string name="baseperimetr">Perimeter of the base</string>
     <string name="apopheme">Apopheme</string>
     <string name="creature">Creature</string>
+    <string name="rolladice">Roll a dice</string>
+    <string name="roll">Roll</string>
+    <string name="flip" translatable="false">Flip</string>
+    <string name="flipacoin">Flip a coin</string>
     <string-array name="Creative">
         <item>you have a creature</item>
         <item>you haven`t a creature</item>
@@ -259,4 +263,5 @@
         <item>I^2*R</item>
         <item>U^2/R</item>
     </string-array>
+    <string name="title_activity_dice_roller">DiceRoller</string>
 </resources>
