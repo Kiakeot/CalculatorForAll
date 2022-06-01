@@ -25,4 +25,6 @@
 
     <color name="background_day">#CAF0F8</color>
     <color name="background_night">#0B3036</color>
+
+    <color name="background_dialog">#96BFC8</color>
 </resources>
