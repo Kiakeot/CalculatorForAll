@@ -9,6 +9,7 @@
     style="@style/layout_background">
 
         <ImageView
+            style="@style/icon_style"
             android:id="@+id/image1"
             android:layout_width="75dp"
             android:layout_height="75dp"
@@ -19,6 +20,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            style="@style/icon_style"
             android:id="@+id/TextView1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -28,7 +30,6 @@
             android:marqueeRepeatLimit="marquee_forever"
             android:singleLine="true"
             android:text="Main Title"
-            android:textColor="#000"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
