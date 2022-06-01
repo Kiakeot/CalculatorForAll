@@ -27,4 +27,8 @@
     <style name="layout_background">
         <item name="android:background">@color/background_night</item>
     </style>
+
+    <style name="icon_style">
+        <item name="android:tint">@color/white</item>
+    </style>
 </resources>
