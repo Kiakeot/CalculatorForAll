@@ -22,7 +22,7 @@
         style="@style/buttonStyle"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style_day"
         android:text="@string/off"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
@@ -77,7 +77,7 @@
     <Button
         android:id="@+id/calculate"
         style="@style/buttonStyle"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style_day"
         android:layout_width="wrap_content"
         android:text="@string/calc"
         android:layout_height="wrap_content"

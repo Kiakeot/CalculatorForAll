@@ -22,7 +22,7 @@
         style="@style/buttonStyle"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style_day"
         android:src="@drawable/off_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

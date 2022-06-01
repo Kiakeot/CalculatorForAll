@@ -20,6 +20,9 @@
     <color name="secondList">#9BA3EB</color>
     <color name="thirdList">#DBDFFD</color>
 
+<!--Temporary for build. DELETE AFTER FINISHING REPLACING COLORS-->
+    <color name="background">#FFFFFF</color>
 
-    <color name="background">#CAF0F8</color>
+    <color name="background_day">#CAF0F8</color>
+    <color name="background_night">#0B3036</color>
 </resources>

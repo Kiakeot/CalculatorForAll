@@ -21,7 +21,7 @@
 
     <Button
         style="@style/buttonStyle"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style_day"
         android:id="@+id/konvert"
         android:text="@string/konv"
         android:shadowColor="@color/text_shadow"
@@ -80,7 +80,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:src="@drawable/off_icon"
-        android:background="@drawable/button_style"
+        android:background="@drawable/button_style_day"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
