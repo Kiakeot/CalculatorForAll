@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">CalculatorForAll</string>
-    <string name="percentage">percentage</string>
-    <string name="average">average</string>
-    <string name="proportions">proportions</string>
-    <string name="random">random number generator</string>
-    <string name="data">data</string>
+    <string name="percentage">Percentage</string>
+    <string name="average">Average</string>
+    <string name="proportions">Proportions</string>
+    <string name="random">Random number generator</string>
+    <string name="data">Date</string>
     <string name="BMI">BMI</string>
-    <string name="fuel">fuel volume</string>
+    <string name="fuel">Fuel volume</string>
     <string name="dataStorage">Data storage conversion</string>
     <string name="dataRate">Data rate conversion</string>
     <string name="square">Areas</string>
@@ -74,11 +74,11 @@
     <string name="July">Jul.</string>
     <string name="August">Aug.</string>
     <string name="September">Sep.</string>
-    <string name="October">O</string>
+    <string name="October">Oct.</string>
     <string name="November">Nov.</string>
     <string name="December">Dec.</string>
     <string name="GCDandLCM">GCD and LCM</string>
-    <string name="search">search</string>
+    <string name="search">Search</string>
     <string name="GDC">GDC</string>
     <string name="LCM">LCM</string>
     <string name="zina">Price per product</string>
@@ -93,7 +93,7 @@
     <string name="Error">An error has occurred</string>
     <string name="ErrorText">Oops, it seems like an error occurred. Please try again.</string>
     <string name="InternetError">Oops, unable to connect with the server. Check your internet connection and try again.</string>
-    <string name="ok">Ok</string>
+    <string name="ok">OK</string>
     <string name="Hello">Hello!</string>
     <string name="Welcome">Welcome to CalculatorForAll</string>
     <string name="answer">Answers</string>

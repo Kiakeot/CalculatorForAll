@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    style="@style/layout_background"
     tools:context=".angel">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="88dp"
         android:layout_height="88dp"
+        style="@style/icon_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -21,7 +22,6 @@
 
     <Button
         style="@style/buttonStyle"
-        android:background="@drawable/button_style_day"
         android:id="@+id/konvert"
         android:text="@string/konv"
         android:shadowColor="@color/text_shadow"
@@ -56,12 +56,10 @@
 
     <Spinner
         android:id="@+id/spinner_start"
-        android:layout_width="127dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/edit_text_start"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.279" />
 
@@ -80,7 +78,6 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:src="@drawable/off_icon"
-        android:background="@drawable/button_style_day"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,13 +86,14 @@
 
     <EditText
         android:id="@+id/edit_text_start"
-        android:layout_width="274dp"
+        android:layout_width="0dp"
         android:layout_height="68dp"
-        android:background="@drawable/edit_text_style"
+        style="@style/buttonStyle"
         android:gravity="center"
         android:hint="@string/angel"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="@+id/spinner_start"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_start"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/spinner_start" />
 
@@ -105,7 +103,7 @@
         android:layout_height="68dp"
         android:layout_marginEnd="8dp"
         android:hint="@string/finishValue"
-        android:background="@drawable/edit_text_style"
+        style="@style/buttonStyle"
         android:gravity="center"
         android:textStyle="bold"
         android:textSize="20dp"

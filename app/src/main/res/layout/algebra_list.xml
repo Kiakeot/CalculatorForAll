@@ -6,7 +6,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:background="@color/background">
+    style="@style/layout_background"
+    >
 
     <ImageView
         android:id="@+id/image1"
@@ -43,6 +44,8 @@
         android:layout_marginTop="4dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_editor_absoluteX="16dp"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

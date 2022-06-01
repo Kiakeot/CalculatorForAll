@@ -22,7 +22,7 @@ public class algebra extends AppCompatActivity implements OnClickInterface {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_algebra);
         RecyclerView recyclerView = findViewById(R.id.recycler_algebra);
-        Button buoff = (Button) findViewById(R.id.buoff);
+        Button buoff = (Button) findViewById(R.id.switch_off);
         LinearLayoutManager algebraManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(algebraManager);
         arrayList.add(new ItemListModel(0,getString(R.string.percentage),getResources().getDrawable(R.drawable.percent_icon)));

@@ -2,8 +2,8 @@
 <resources>
         <string name="app_name">CalculatorForAll</string>
         <string name="percentage">Interesse</string>
-        <string name="average">Середнє</string>
-        <string name="proportions">Durchschnitt</string>
+        <string name="average">Durchschnitt</string>
+        <string name="proportions">Proportionen</string>
         <string name="random">Zufallszahlengenerator</string>
         <string name="data">Unterschied zwischen Daten</string>
         <string name="BMI">BMI</string>
@@ -94,7 +94,7 @@
         <string name="Error">Ein Fehler ist aufgetreten</string>
         <string name="ErrorText">Oh, anscheinend ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.</string>
         <string name="InternetError">Entschuldigung, es kann keine Verbindung zum Server hergestellt werden. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.</string>
-        <string name="ok">Ok</string>
+        <string name="ok">OK</string>
         <string name="Hello">Hallo!</string>
         <string name="Welcome">Willkommen zu CalculatorForAll</string>
         <string name="answer">Antworten</string>
