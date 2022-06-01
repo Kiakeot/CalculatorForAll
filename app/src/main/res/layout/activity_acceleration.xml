@@ -65,7 +65,7 @@
 
     <Spinner
         android:id="@+id/spinner_finish"
-        android:layout_width="127dp"
+        android:layout_width="wrap_content"
         android:layout_height="68dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,19 +100,17 @@
 
     <TextView
         android:id="@+id/text_finish"
-        android:layout_width="274dp"
+        android:layout_width="0dp"
         android:layout_height="68dp"
-        android:layout_marginEnd="8dp"
-        android:hint="@string/finishValue"
         android:background="@drawable/edit_text_style"
         android:gravity="center"
-        android:textStyle="bold"
+        android:hint="@string/finishValue"
         android:textSize="20dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/spinner_finish"
         app:layout_constraintEnd_toStartOf="@+id/spinner_finish"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/spinner_finish"
-         />
+        app:layout_constraintTop_toTopOf="@+id/spinner_finish" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
