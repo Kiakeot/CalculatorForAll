@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".finance"
-    android:background="@color/background"
+    style="@style/layout_background"
     >
 
     <Button
         style="@style/buttonStyle"
-        android:background="@drawable/button_style_day"
         android:id="@+id/buoff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

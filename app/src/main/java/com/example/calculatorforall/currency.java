@@ -434,6 +434,4 @@ public class currency extends AppCompatActivity {
             result = startNumber;
         }
     }
-
-
 }

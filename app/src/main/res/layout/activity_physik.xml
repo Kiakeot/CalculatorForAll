@@ -4,16 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    style="@style/layout_background"
     tools:context=".physik">
 
     <Button
         style="@style/buttonStyle"
-        android:background="@drawable/button_style_day"
         android:id="@+id/buoff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:text="@string/switch_off"
         tools:ignore="MissingConstraints" />
 

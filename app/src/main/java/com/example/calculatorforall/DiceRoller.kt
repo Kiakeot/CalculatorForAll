@@ -48,7 +48,7 @@ class DiceRoller : ComponentActivity() {
 @Composable
 fun DiceRollerApp() {
     DiceWithButtonAndImage(modifier = Modifier
-        .background(colorResource(R.color.background))
+        .background(colorResource(R.color.background_day))
         .fillMaxSize()
         .wrapContentSize(Alignment.Center)
     )

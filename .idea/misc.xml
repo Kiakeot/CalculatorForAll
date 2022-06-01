@@ -25,14 +25,20 @@
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_average.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_bmi.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_capacity.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_cone.xml" value="0.18515704154002027" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_cone_square.xml" value="0.18515704154002027" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_credit.xml" value="0.22" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_currency.xml" value="0.25" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_cylinder.xml" value="0.18515704154002027" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_cylinder_square.xml" value="0.18515704154002027" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_data_rate.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_data_storage.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_date.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_deposit.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_finance.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_flip_acoin.xml" value="0.18515704154002027" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_fuel.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_gdc_and_lcm.xml" value="0.18515704154002027" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_geometry.xml" value="0.19739583333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_life.xml" value="0.19739583333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_linear.xml" value="0.22" />
@@ -40,6 +46,7 @@
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_number_systems.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_ohm.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_parallelogram.xml" value="0.18515704154002027" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_percentage.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_physik.xml" value="0.19739583333333333" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_power.xml" value="0.2713541666666667" />

@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CylinderSquare"
-    android:background="@color/background">
+    style="@style/layout_background">
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="75dp"
         android:layout_height="75dp"
+        style="@style/icon_style"
         android:src="@drawable/cylinder_icon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +23,6 @@
         style="@style/buttonStyle"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="@drawable/button_style_day"
         android:text="@string/off"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
@@ -34,6 +34,7 @@
         android:layout_width="112dp"
         android:layout_height="28dp"
         android:shadowColor="@color/text_shadow"
+        style="@style/buttonStyle"
         android:shadowDx="1"
         android:shadowDy="1"
         android:shadowRadius="2"
@@ -49,7 +50,7 @@
         android:id="@+id/first_number"
         android:layout_width="185dp"
         android:layout_height="56dp"
-        android:background="@drawable/edit_text_style"
+        style="@style/buttonStyle"
         android:gravity="center"
         android:hint="@string/radius"
         android:inputType="number"
@@ -63,9 +64,9 @@
     <EditText
         android:id="@+id/second_number"
         android:layout_width="185dp"
+        style="@style/buttonStyle"
         android:layout_height="56dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/edit_text_style"
         android:gravity="center"
         android:hint="@string/height"
         android:inputType="number"
@@ -77,7 +78,6 @@
     <Button
         android:id="@+id/calculate"
         style="@style/buttonStyle"
-        android:background="@drawable/button_style_day"
         android:layout_width="wrap_content"
         android:text="@string/calc"
         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
         android:id="@+id/text_finish"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/edit_text_style"
+        style="@style/buttonStyle"
         android:gravity="center"
         android:hint="@string/finishValue"
         android:textSize="20dp"
