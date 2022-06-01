@@ -5,9 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Sphere"
-    android:background="@color/background">
+    style="@style/layout_background">
 
     <ImageView
+        style="@style/icon_style"
         android:id="@+id/imageView2"
         android:layout_width="75dp"
         android:layout_height="75dp"
@@ -22,7 +23,6 @@
         style="@style/buttonStyle"
         android:layout_width="75dp"
         android:layout_height="75dp"
-        android:background="@drawable/button_style_day"
         android:text="@string/off"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
@@ -50,7 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginTop="72dp"
-        android:background="@drawable/edit_text_style"
+        style="@style/buttonStyle"
         android:gravity="center"
         android:hint="@string/radius"
         android:inputType="number"
@@ -64,7 +64,6 @@
         style="@style/buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_style_day"
         android:shadowColor="@color/text_shadow"
         android:shadowDx="1"
         android:shadowDy="1"
@@ -79,7 +78,7 @@
         android:id="@+id/text_finish"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@drawable/edit_text_style"
+        style="@style/buttonStyle"
         android:gravity="center"
         android:hint="@string/finishValue"
         android:textSize="20dp"
