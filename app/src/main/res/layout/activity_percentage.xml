@@ -23,7 +23,6 @@
         style="@style/buttonStyle"
         android:layout_width="86dp"
         android:layout_height="86dp"
-        android:background="@drawable/button_style_day"
         android:src="@drawable/off_icon"
         android:text="@string/off"
         app:layout_constraintBottom_toTopOf="@+id/textView2"

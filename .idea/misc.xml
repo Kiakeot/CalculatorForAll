@@ -12,35 +12,7 @@
         <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_currency.xml" value="0.264" />
         <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_date.xml" value="0.12158054711246201" />
         <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_prizma.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_prizma_square.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_pyramid.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_pyramid_square.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_quadratic_equation.xml" value="0.12158054711246201" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_random_number_generator.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_rectangel.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_rhombus.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_search.xml" value="0.2" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_speed.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_sphere.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_sphere_square.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_square.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_square_convertor.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_switch_off.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_tax.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_temperature.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_tip.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_trapez.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_triangel.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_trigonometry.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_value.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_value_convertor.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_value_square.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/activity_weight.xml" value="0.25" />
         <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/algebra_list.xml" value="0.12158054711246201" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/dialog_error.xml" value="0.25" />
-        <entry key="..\:/Users/Bogdan/StudioProjects/CalculatorForAll/app/src/main/res/layout/internet_error.xml" value="0.25" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.205" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/drawable/background_splash.xml" value="0.1775" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/drawable/button_style.xml" value="0.1775" />
@@ -86,12 +58,14 @@
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_search.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_speed.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_square.xml" value="0.2713541666666667" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_square_convertor.xml" value="0.18515704154002027" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_switch_off.xml" value="0.2758152173913043" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_tax.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_temperature.xml" value="0.2056159420289855" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_tip.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_trigonometry.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_value_conversion.xml" value="0.2056159420289855" />
+        <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_value_convertor.xml" value="0.18515704154002027" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/activity_weight.xml" value="0.2713541666666667" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/algebra.xml" value="0.2758152173913043" />
         <entry key="..\:/Users/nikita/AndroidStudioProjects/CalculatorForAll/app/src/main/res/layout/algebra_list.xml" value="0.213768115942029" />

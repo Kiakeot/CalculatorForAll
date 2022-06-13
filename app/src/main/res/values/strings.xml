@@ -42,7 +42,7 @@
     <string name="algebra">Algebra</string>
     <string name="finance">Finances</string>
     <string name="physik">Physics</string>
-    <string name="life">household</string>
+    <string name="life">Household</string>
     <string name="of">Off</string>
     <string name="allSum">Enter the full amount</string>
     <string name="percentPerMonth">Enter interest (per month)</string>
